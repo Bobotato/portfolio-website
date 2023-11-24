@@ -1,0 +1,8 @@
+version: "3.9"
+
+services:
+  frontend:
+    container_name: portfolio_frontend_container
+    image: valenciaga/portfolio_frontend
+    ports:
+        - 80:80
