@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import LandingPage from '@/components/LandingPage.vue';
+import WorkExperiencePage from '@/components/WorkExperiencePage.vue'
 </script>
 
 <template>
   <main>
-    <LandingPage></LandingPage>
+    <WorkExperiencePage></WorkExperiencePage>
   </main>
 </template>

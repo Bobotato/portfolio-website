@@ -1,18 +1,21 @@
 <script setup lang="ts">
 import { RouterLink } from 'vue-router'
+
+import ContactTag from './ContactTag.vue';
 </script>
 
 <template>
   <header class="flex flex-col items-center justify-center">
     <RouterLink to="/" class="shine text-green-700 font-bold text-8xl tracking-tighter m-8"
-      >Work Experience</RouterLink
+      >Contact Me</RouterLink
     >
 
     <nav class="flex flex-row gap-8 text-xl">
-      <RouterLink to="/about" class="hover:text-green-700">About</RouterLink>|
-      <RouterLink to="/projects" class="hover:text-green-700">Projects</RouterLink> |
-      <div class="text-green-700">Work Experience</div>
-      | <RouterLink to="/work-experience" class="hover:text-green-700">Contact</RouterLink>
+      <RouterLink to="/about" class="hover:text-green-700">About</RouterLink>
+
+      | <RouterLink to="/projects" class="hover:text-green-700">Projects</RouterLink> |
+      <RouterLink to="/work-experience" class="hover:text-green-700">Work Experience</RouterLink> |
+      <div class="text-green-700">Contact</div>
     </nav>
   </header>
 

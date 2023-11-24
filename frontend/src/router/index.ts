@@ -1,4 +1,4 @@
-import LandingPageView from '@/views/LandingPageView.vue';
+import LandingPageView from '@/views/LandingPageView.vue'
 import { createRouter, createWebHistory } from 'vue-router'
 
 export const router = createRouter({
@@ -15,16 +15,21 @@ export const router = createRouter({
       component: () => import('../views/AboutView.vue')
     },
     {
-      path: '/portfolio',
-      name: 'portfolio',
+      path: '/projects',
+      name: 'projects',
       component: () => import('../views/ProjectsView.vue')
     },
     {
-      path: '/workexperience',
+      path: '/work-experience',
       name: 'workexperience',
       component: () => import('../views/WorkExperienceView.vue')
+    },
+    {
+      path: '/contact',
+      name: 'contact',
+      component: () => import('../views/ContactView.vue')
     }
   ]
-});
+})
 
 export default router
