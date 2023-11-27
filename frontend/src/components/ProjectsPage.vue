@@ -12,8 +12,8 @@ import { RouterLink } from 'vue-router'
       <RouterLink to="/about" class="hover:text-green-700">About</RouterLink> |
       <div class="text-green-700">Projects</div>
       |
-      <RouterLink to="/work-experience" class="hover:text-green-700">Work Experience</RouterLink> |
-      <RouterLink to="/projects" class="hover:text-green-700">Contact</RouterLink>
+      <RouterLink to="/work-experience" class="hover:text-green-700">Experience</RouterLink> |
+      <RouterLink to="/contact" class="hover:text-green-700">Contact</RouterLink>
     </nav>
   </header>
 

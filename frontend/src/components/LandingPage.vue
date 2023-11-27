@@ -18,7 +18,7 @@ import { RouterLink } from 'vue-router'
     <nav class="flex flex-row gap-8 text-xl text-center">
       <RouterLink to="/about" class="hover:text-green-700">About</RouterLink>
       |<RouterLink to="/projects" class="hover:text-green-700">Projects</RouterLink> |
-      <RouterLink to="/work-experience" class="hover:text-green-700">Work Experience</RouterLink> |
+      <RouterLink to="/work-experience" class="hover:text-green-700">Experience</RouterLink> |
       <RouterLink to="/contact" class="hover:text-green-700">Contact</RouterLink>
     </nav>
   </main>
