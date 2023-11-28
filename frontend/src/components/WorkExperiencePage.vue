@@ -1,5 +1,7 @@
 <script setup lang="ts">
 import { RouterLink } from 'vue-router'
+
+import ExperienceArticle from './ExperienceArticle.vue'
 </script>
 
 <template>
@@ -23,7 +25,12 @@ import { RouterLink } from 'vue-router'
       <p>Feel free to give me a shout or look up any of my projects.</p>
     </div>
 
-    <ContactTag></ContactTag>
+    <div class="flex flex-col gap-4">
+      <ExperienceArticle></ExperienceArticle>
+      <ExperienceArticle></ExperienceArticle>
+      <ExperienceArticle></ExperienceArticle>
+      <ExperienceArticle></ExperienceArticle>
+    </div>
   </main>
 </template>
 

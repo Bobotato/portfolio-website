@@ -38,27 +38,27 @@ import { RouterLink } from 'vue-router'
       <h1 class="font-bold text-center text-3xl">My Languages & Frameworks</h1>
       <div class="flex flex-row place-items-center justify-center">
         <div class="flex flex-col place-items-center justify-center">
-          <img src="../assets/PythonIcon.png" class="h-24 w-24" />
+          <img src="../assets/fullColourIcons/PythonIcon.png" class="h-24 w-24" />
           <p>Python</p>
         </div>
 
         <div class="flex flex-col text-center place-items-center justify-center">
-          <img src="../assets/JavascriptIcon.png" class="h-24 w-24" />
+          <img src="../assets/fullColourIcons/JavascriptIcon.png" class="h-24 w-24" />
           <p>Javascript</p>
         </div>
 
         <div class="flex flex-col place-items-center justify-center">
-          <img src="../assets/TypescriptIcon.png" class="h-24 w-24" />
+          <img src="../assets/fullColourIcons/TypescriptIcon.png" class="h-24 w-24" />
           <p>Typescript</p>
         </div>
 
         <div class="flex flex-col place-items-center justify-center">
-          <img src="../assets/TailwindIcon.png" class="h-24 w-24" />
+          <img src="../assets/fullColourIcons/TailwindIcon.png" class="h-24 w-24" />
           <p>Tailwind</p>
         </div>
 
         <div class="flex flex-col place-items-center justify-center">
-          <img src="../assets/VueIcon.svg" class="scale-75 h-24 w-24" />
+          <img src="../assets/fullColourIcons/VueIcon.svg" class="scale-75 h-24 w-24" />
           <p>Vue</p>
         </div>
       </div>
@@ -66,17 +66,17 @@ import { RouterLink } from 'vue-router'
       <h1 class="font-bold text-center text-3xl mt-4">My Technologies</h1>
       <div class="flex flex-row place-items-center justify-center">
         <div class="flex flex-col place-items-center justify-center">
-          <img src="../assets/awsIcon.png" class="h-24 w-24" />
+          <img src="../assets/fullColourIcons/awsIcon.png" class="h-24 w-24" />
           <p>AWS</p>
         </div>
 
         <div class="flex flex-col text-center place-items-center justify-center">
-          <img src="../assets/DOIcon.png" class="h-24 w-24" />
+          <img src="../assets/fullColourIcons/DOIcon.png" class="h-24 w-24" />
           <p>DigitalOcean</p>
         </div>
 
         <div class="flex flex-col place-items-center justify-center">
-          <img src="../assets/AdobeCCIcon.png" class="h-24 w-24" />
+          <img src="../assets/fullColourIcons/AdobeCCIcon.png" class="h-24 w-24" />
           <p>Adobe CC</p>
         </div>
       </div>
