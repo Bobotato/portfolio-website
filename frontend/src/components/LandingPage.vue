@@ -1,9 +1,11 @@
 <script setup lang="ts">
 import { RouterLink } from 'vue-router'
+
+import LandingPage3D from '@/components/LandingPage3D.vue'
 </script>
 
 <template>
-<main class="flex flex-col gap-8 items-center justify-center h-screen w-screen">
+<main class="flex flex-row gap-8 items-center justify-center h-screen w-screen">
   <section class="flex flex-col gap-8 w-7/12">
 
     <div class="full-name">
@@ -15,17 +17,17 @@ import { RouterLink } from 'vue-router'
       </div>
     </div>
 
-    <div class="title -mt-6 text-4xl">
+    <div class="work-title -mt-6 text-4xl">
       Full Stack Developer
     </div>
 
-    <nav class="flex flex-col w-2/12 gap-4 text-xl text-left">
+    <nav class="nav-menu flex flex-col w-2/12 gap-4 text-xl text-left">
       <RouterLink to="/about" class="hover:text-green-700">About</RouterLink>
       <RouterLink to="/projects" class="hover:text-green-700">Projects</RouterLink>
       <RouterLink to="/work-experience" class="hover:text-green-700">Experience</RouterLink>
     </nav>
 
-    <ul class="flex flex-row gap-4 items-center">
+    <ul class="contact-menu flex flex-row gap-4 items-center">
       <li class="text-xs">
         <a class="block hover:text-slate-200" href="https://github.com/bobotato" target="_blank" rel="noreferrer">
           <span class="sr-only">GitHub</span>
@@ -54,6 +56,10 @@ import { RouterLink } from 'vue-router'
       </li>
 
     </ul>
+  </section>
+
+  <section class="rex flex border-2 w-3/12 h-64">
+    <LandingPage3D></LandingPage3D>
   </section>
 </main>
 
