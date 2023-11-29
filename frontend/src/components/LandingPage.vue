@@ -5,7 +5,7 @@ import LandingPage3D from '@/components/LandingPage3D.vue'
 </script>
 
 <template>
-<main class="flex flex-row gap-8 items-center justify-center h-screen w-screen">
+<main class="flex flex-row max-w-screen-md mx-auto items-center justify-center h-screen w-screen">
   <section class="flex flex-col gap-8 w-7/12">
 
     <div class="full-name">
@@ -58,7 +58,7 @@ import LandingPage3D from '@/components/LandingPage3D.vue'
     </ul>
   </section>
 
-  <section class="rex flex border-2 w-3/12 h-64">
+  <section class="rex3d relative left-10 top-8 flex">
     <LandingPage3D></LandingPage3D>
   </section>
 </main>

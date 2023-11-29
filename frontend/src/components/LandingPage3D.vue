@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Scene, PerspectiveCamera, WebGLRenderer, PointLight, GridHelper } from 'three';
+import { Scene, PerspectiveCamera, WebGLRenderer, PointLight } from 'three';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 
@@ -25,15 +25,16 @@ onMounted(() => {
     loader.load('/src/assets/3DModels/rexModel.gltf', function(gltf) {
     const model = gltf.scene;
     scene.add(model);
+    model.position.setY(-0.1);
     rex = model;
     });
 
     renderer.setPixelRatio(window.devicePixelRatio);
     renderer.setClearColor( 0xffffff, 0);
-    renderer.setSize(500,500);
+    renderer.setSize(600,600);
     camera.position.setZ(10);
-    camera.position.setY(3);
-    camera.position.setX(3);
+    camera.position.setY(2);
+    camera.position.setX(1);
 
     renderer.render( scene, camera );
 
@@ -42,6 +43,8 @@ onMounted(() => {
     scene.add(pointLight);
 
     const controls = new OrbitControls(camera, renderer.domElement);
+    controls.enablePan = false;
+    controls.enableZoom = false;
 
     function animate() {
       if(rex)
