@@ -1,11 +1,11 @@
 <script setup lang="ts">
 import { RouterLink } from 'vue-router'
 
-import ExperienceArticle from './ExperienceArticle.vue'
+import ExperienceArticlePreview from './ExperienceArticlePreview.vue'
 </script>
 
 <template>
-  <main class="flex flex-col max-w-screen-md mx-auto items-center justify-center h-screen w-screen">
+  <main class="flex flex-col max-w-screen-md mx-auto items-center justify-center w-screen">
     <section class="navmenu flex flex-col items-center justify-center">
       <RouterLink
         to="/"
@@ -26,19 +26,19 @@ import ExperienceArticle from './ExperienceArticle.vue'
       </div>
 
       <div class="flex flex-col gap-4">
-        <ExperienceArticle></ExperienceArticle>
-        <ExperienceArticle></ExperienceArticle>
-        <ExperienceArticle></ExperienceArticle>
-        <ExperienceArticle></ExperienceArticle>
+        <ExperienceArticlePreview></ExperienceArticlePreview>
+        <ExperienceArticlePreview></ExperienceArticlePreview>
+        <ExperienceArticlePreview></ExperienceArticlePreview>
+        <ExperienceArticlePreview></ExperienceArticlePreview>
       </div>
     </section>
   </main>
 
-<footer class="flex justify-center">
-  <div class="fixed bottom-0 flex flex-col w-4/12 p-4">
+<footer class="flex justify-center mt-12">
+  <div class="flex flex-col w-4/12 p-4">
 
     <section class="mx-auto">
-      <ul class="contact-menu flex flex-row mb-2 gap-8 items-center">
+      <ul class="contact-menu flex flex-row my-2 gap-8 items-center">
         <li class="text-xs">
           <a class="block hover:text-green-700" href="https://github.com/bobotato" target="_blank" rel="noreferrer">
             <span class="sr-only">GitHub</span>

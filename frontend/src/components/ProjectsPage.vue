@@ -1,9 +1,13 @@
 <script setup lang="ts">
 import { RouterLink } from 'vue-router'
+
+import ProjectArticlePreview from './ProjectArticlePreview.vue';
+
+import { weatherApplication, hiloApplication, spendTrackApplication } from '@/assets/text/PortfolioData';
 </script>
 
 <template>
-<main class="flex flex-col max-w-screen-md mx-auto items-center justify-center h-screen w-screen">
+<main class="flex flex-col max-w-screen-lg mx-auto items-center justify-center w-screen">
   <section class="navmenu flex flex-col items-center justify-center">
     <RouterLink
       to="/"
@@ -17,13 +21,21 @@ import { RouterLink } from 'vue-router'
       <RouterLink to="/work-experience" class="hover:text-green-700">Experience</RouterLink>
     </nav>
   </section>
+
+  <section>
+    <div class="portfolio flex flex-col gap-8 mt-10">
+      <ProjectArticlePreview :portfolio-preview-details="weatherApplication"></ProjectArticlePreview>
+      <ProjectArticlePreview :portfolio-preview-details="hiloApplication"></ProjectArticlePreview>
+      <ProjectArticlePreview :portfolio-preview-details="spendTrackApplication"></ProjectArticlePreview>
+    </div>
+  </section>
 </main>
 
-<footer class="flex justify-center">
-  <div class="fixed bottom-0 flex flex-col w-4/12 p-4">
+<footer class="flex justify-center mt-12">
+  <div class="flex flex-col w-4/12 p-4">
 
     <section class="mx-auto">
-      <ul class="contact-menu flex flex-row mb-2 gap-8 items-center">
+      <ul class="contact-menu flex flex-row my-2 gap-8 items-center">
         <li class="text-xs">
           <a class="block hover:text-green-700" href="https://github.com/bobotato" target="_blank" rel="noreferrer">
             <span class="sr-only">GitHub</span>
@@ -81,3 +93,4 @@ import { RouterLink } from 'vue-router'
   }
 }
 </style>
+@/assets/text/PortfolioData
