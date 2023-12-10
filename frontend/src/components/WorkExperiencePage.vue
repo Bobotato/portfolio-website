@@ -2,10 +2,12 @@
 import { RouterLink } from 'vue-router'
 
 import ExperienceArticlePreview from './ExperienceArticlePreview.vue'
+
+import { foodaliciousConcepts, smilePepper, freelanceWork } from '@/assets/text/ExperienceData';
 </script>
 
 <template>
-  <main class="flex flex-col max-w-screen-md mx-auto items-center justify-center w-screen">
+  <main class="flex flex-col max-w-screen-xl mx-auto items-center justify-center w-screen">
     <section class="navmenu flex flex-col items-center justify-center">
       <RouterLink
         to="/"
@@ -25,11 +27,10 @@ import ExperienceArticlePreview from './ExperienceArticlePreview.vue'
         <p>Feel free to give me a shout or look up any of my projects.</p>
       </div>
 
-      <div class="flex flex-col gap-4">
-        <ExperienceArticlePreview></ExperienceArticlePreview>
-        <ExperienceArticlePreview></ExperienceArticlePreview>
-        <ExperienceArticlePreview></ExperienceArticlePreview>
-        <ExperienceArticlePreview></ExperienceArticlePreview>
+      <div class="experience flex flex-col gap-8 mt-10">
+        <ExperienceArticlePreview :experience-preview-details="foodaliciousConcepts"></ExperienceArticlePreview>
+        <ExperienceArticlePreview :experience-preview-details="smilePepper"></ExperienceArticlePreview>
+        <ExperienceArticlePreview :experience-preview-details="freelanceWork"></ExperienceArticlePreview>
       </div>
     </section>
   </main>
