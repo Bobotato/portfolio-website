@@ -19,8 +19,8 @@ const props = defineProps<Props>()
 
             <section class="project-description flex flex-col p-8">
                 <div class="flex flex-col gap-4">
-                    <h1 class="text-3xl text-left font-bold">{{ props.portfolioPreviewDetails.title }}</h1>
-                    <p class="desc text-2xl text-left">{{ props.portfolioPreviewDetails.desc }}</p>
+                    <h1 class="text-4xl text-left font-bold">{{ props.portfolioPreviewDetails.title }}</h1>
+                    <p class="desc text-2xl text-left font-light">{{ props.portfolioPreviewDetails.desc }}</p>
                 </div>
 
                 <div class="stack flex flex-row gap-4 mt-6 flex-wrap">

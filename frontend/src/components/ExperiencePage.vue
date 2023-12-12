@@ -1,9 +1,9 @@
 <script setup lang="ts">
 import { RouterLink } from 'vue-router'
 
-import ExperienceArticlePreview from './ExperienceArticlePreview.vue'
+import ExperienceArticle from './ExperienceArticle.vue'
 
-import { foodaliciousConcepts, smilePepper, freelanceWork } from '@/assets/text/ExperienceData';
+import { FOODALICIOUSCONCEPTS, SMILEPEPPER, FREELANCEWORK } from '@/assets/text/ExperienceData';
 </script>
 
 <template>
@@ -28,11 +28,13 @@ import { foodaliciousConcepts, smilePepper, freelanceWork } from '@/assets/text/
       </div>
 
       <div class="experience flex flex-col gap-8 mt-10">
-        <ExperienceArticlePreview :experience-preview-details="foodaliciousConcepts"></ExperienceArticlePreview>
-        <ExperienceArticlePreview :experience-preview-details="smilePepper"></ExperienceArticlePreview>
-        <ExperienceArticlePreview :experience-preview-details="freelanceWork"></ExperienceArticlePreview>
+        <ExperienceArticle :experience-details="SMILEPEPPER"></ExperienceArticle>
+        <ExperienceArticle :experience-details="FOODALICIOUSCONCEPTS"></ExperienceArticle>
+        <ExperienceArticle :experience-details="FREELANCEWORK"></ExperienceArticle>
       </div>
     </section>
+
+    <p>For my full resume:</p>
   </main>
 
 <footer class="flex justify-center mt-12">

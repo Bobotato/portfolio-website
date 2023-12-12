@@ -22,7 +22,7 @@ import { RouterLink } from 'vue-router'
     <img src="../assets/pictures/ProfilePicture.jpg" class="rounded-full mt-10 mb-4 w-56 h-56" />
     <p class="text-center text-xl font-bold">Alexander Bhojwani</p>
 
-    <div class="flex flex-col m-8 gap-8 items-center text-center text-xl max-w-6xl">
+    <div class="flex flex-col m-8 gap-8 items-center text-center text-xl max-w-6xl font-light">
       <p>
         My name is Alexander Bhojwani, I'm 29 this year and I'm a self-trained full stack software
         engineer.

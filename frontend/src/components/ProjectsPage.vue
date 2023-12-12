@@ -3,11 +3,11 @@ import { RouterLink } from 'vue-router'
 
 import ProjectArticlePreview from './ProjectArticlePreview.vue';
 
-import { weatherApplication, hiloApplication, spendTrackApplication } from '@/assets/text/PortfolioData';
+import { WEATHER, HILO, SPENDTRACK, PORTFOLIO } from '@/assets/text/PortfolioData';
 </script>
 
 <template>
-<main class="flex flex-col max-w-screen-lg mx-auto items-center justify-center w-screen">
+<main class="flex flex-col max-w-screen-xl mx-auto items-center justify-center w-screen">
   <section class="navmenu flex flex-col items-center justify-center">
     <RouterLink
       to="/"
@@ -24,9 +24,10 @@ import { weatherApplication, hiloApplication, spendTrackApplication } from '@/as
 
   <section>
     <div class="portfolio flex flex-col gap-8 mt-10">
-      <ProjectArticlePreview :portfolio-preview-details="weatherApplication"></ProjectArticlePreview>
-      <ProjectArticlePreview :portfolio-preview-details="hiloApplication"></ProjectArticlePreview>
-      <ProjectArticlePreview :portfolio-preview-details="spendTrackApplication"></ProjectArticlePreview>
+      <ProjectArticlePreview :portfolio-preview-details="WEATHER"></ProjectArticlePreview>
+      <ProjectArticlePreview :portfolio-preview-details="HILO"></ProjectArticlePreview>
+      <ProjectArticlePreview :portfolio-preview-details="SPENDTRACK"></ProjectArticlePreview>
+      <ProjectArticlePreview :portfolio-preview-details="PORTFOLIO"></ProjectArticlePreview>
     </div>
   </section>
 </main>

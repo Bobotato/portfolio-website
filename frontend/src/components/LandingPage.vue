@@ -21,10 +21,10 @@ import LandingPage3D from '@/components/LandingPage3D.vue'
       Full Stack Developer
     </div>
 
-    <nav class="nav-menu flex flex-col w-2/12 gap-4 text-2xl text-left">
-      <RouterLink to="/about" class="hover:text-green-700">About</RouterLink>
-      <RouterLink to="/projects" class="hover:text-green-700">Projects</RouterLink>
-      <RouterLink to="/work-experience" class="hover:text-green-700">Experience</RouterLink>
+    <nav class="nav-menu flex flex-col w-2/12 gap-4 text-2xl text-left font-light">
+      <RouterLink to="/about" class="font-light hover:text-green-700">About</RouterLink>
+      <RouterLink to="/projects" class="font-light hover:text-green-700">Projects</RouterLink>
+      <RouterLink to="/work-experience" class="font-light hover:text-green-700">Experience</RouterLink>
     </nav>
 
     <ul class="contact-menu flex flex-row mt-4 gap-8 items-center">
