@@ -7,25 +7,26 @@ import { WEATHER, HILO, SPENDTRACK, PORTFOLIO } from '@/assets/text/PortfolioDat
 </script>
 
 <template>
-<main class="flex flex-col max-w-screen-xl mx-auto items-center justify-center w-screen">
-  <section class="navmenu flex flex-col items-center justify-center">
+<main class="flex flex-col max-w-screen-md mx-auto items-center justify-center w-screen">
+  <div id="nav-menu" class="flex flex-col items-center justify-center">
     <RouterLink
       to="/"
-      class="shine text-green-700 font-bold text-8xl tracking-tighter text-center m-8 px-2"
-      >Portfolio</RouterLink>
+      id="page-name"
+      class="shine text-green-700 font-bold text-5xl tracking-tighter text-center mt-8 mb-4 lg:text-5xl lg:m-8"
+      >Projects</RouterLink>
 
-    <nav class="flex flex-row gap-8 text-xl text-center">
-      <RouterLink to="/" class="hover:text-green-700">Home</RouterLink> |
-      <RouterLink to="/about" class="hover:text-green-700">About</RouterLink> |
-      <div class="text-green-700">Projects</div> |
-      <RouterLink to="/work-experience" class="hover:text-green-700">Experience</RouterLink>
+    <nav class="flex flex-row gap-2 text-lg text-center lg:gap-8">
+      <RouterLink to="/" class="hover:text-green-700 font-light">Home</RouterLink> |
+      <RouterLink to="/about" class="hover:text-green-700 font-light">About</RouterLink> |
+      <div class="text-green-700 font-light">Projects</div> |
+      <RouterLink to="/work-experience" class="hover:text-green-700 font-light">Experience</RouterLink>
     </nav>
-  </section>
+  </div>
 
   <section>
     <div class="portfolio flex flex-col gap-8 mt-10">
-      <ProjectArticlePreview :portfolio-preview-details="WEATHER"></ProjectArticlePreview>
       <ProjectArticlePreview :portfolio-preview-details="HILO"></ProjectArticlePreview>
+      <ProjectArticlePreview :portfolio-preview-details="WEATHER"></ProjectArticlePreview>
       <ProjectArticlePreview :portfolio-preview-details="SPENDTRACK"></ProjectArticlePreview>
       <ProjectArticlePreview :portfolio-preview-details="PORTFOLIO"></ProjectArticlePreview>
     </div>

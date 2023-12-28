@@ -3,7 +3,7 @@ export interface ExperiencePreview {
     position?: string
     duration: string
     shortdesc: string
-    responsbilityList?: Array<string>
+    jobList?: Array<string>
     previewImgURI: string
     previewImgMobileURI?: string
     link?: string
@@ -13,17 +13,23 @@ const FOODALICIOUSCONCEPTS: ExperiencePreview = {
     title: "Foodalicious Concepts",
     position: "Director",
     duration: "2018 - 2022",
-    shortdesc: "This is where I started my journey, digitalising a lobster shack with a fresh new website and online ordering system with an order database. I was their marketing director at that time, pioneering the introduction of low cost lobster rolls to the Singaporean market.",
-    responsbilityList: [ "Designed and built ChunkyLobsters.com using Figma and Wix CMS", "Built low-tech ordering system for online orders using Google forms, Google sheets and AWS S3 for backups.", ],
+    shortdesc: "My responsibilities involved digitalising the operations of a fledgling seafood brand with a website and online ordering system with an order database, alongside marketing, design and R&D.",
+    jobList: [ "Designed and built ChunkyLobsters.com using Figma and Wix",
+               "Built low-tech ordering and database system for online orders using Google forms integrated with Google sheets, with AWS S3 for backups",
+               "Reduced manpower costs for delivery ops to negligible amounts, accomodating total order revenue reaching 5 digit figures daily across 3 outlets",
+               "Marketing strategy revamp led increase to 1mm yearly projected revenue during COVID crisis without increasing manpower costs and minimal tech expenditure" ],
     previewImgURI: "src/assets/pictures/FoodaliciousConceptsLogo.png",
     link: "https://chunkylobsters.com"
 }
 
 const SMILEPEPPER: ExperiencePreview = {
     title: "SmilePepper",
-    position: "Junior Frontend Dev, Marketing, Design",
+    position: "Junior Frontend Dev, Marketing, Design, Finance",
     duration: "2022 - 2023",
     shortdesc: "In this startup, I worked primarily as a junior frontend dev, building our product using Vue3 and Tailwind. I also did the marketing, financials and graphic design.",
+    jobList: [ "Collaborated on the design and build of SmilePepper.com using Vue, Wordpress and WooCommerce",
+               "Collaborated with UIUX and developers to align customer flows derived from Google Analytics and Mouseflow with application operation flows",
+               "Cut more than 50% of monthly cloud service expenditure by flagging, then optimising droplet usage and removing unnecessary overspend", ],
     previewImgURI: "src/assets/pictures/SmilePepperLogo.png",
     link: "https://smilepepper.com"
 }
