@@ -7,15 +7,15 @@ import { WEATHER, HILO, SPENDTRACK, PORTFOLIO } from '@/assets/text/PortfolioDat
 </script>
 
 <template>
-<main class="flex flex-col max-w-screen-md mx-auto items-center justify-center w-screen">
+<main class="flex flex-col max-w-screen-xl mx-auto items-center justify-center w-screen">
   <div id="nav-menu" class="flex flex-col items-center justify-center">
     <RouterLink
       to="/"
       id="page-name"
-      class="shine text-green-700 font-bold text-5xl tracking-tighter text-center mt-8 mb-4 lg:text-5xl lg:m-8"
+      class="shine text-green-700 font-bold text-5xl tracking-tighter text-center mt-8 mb-4 p-2 lg:text-5xl lg:m-8"
       >Projects</RouterLink>
 
-    <nav class="flex flex-row gap-2 text-lg text-center lg:gap-8">
+    <nav class="flex flex-row gap-2 text-lg text-center lg:text-2xl lg:gap-8">
       <RouterLink to="/" class="hover:text-green-700 font-light">Home</RouterLink> |
       <RouterLink to="/about" class="hover:text-green-700 font-light">About</RouterLink> |
       <div class="text-green-700 font-light">Projects</div> |
@@ -24,7 +24,7 @@ import { WEATHER, HILO, SPENDTRACK, PORTFOLIO } from '@/assets/text/PortfolioDat
   </div>
 
   <section>
-    <div class="portfolio flex flex-col gap-8 mt-10">
+    <div id="portfolio-projects" class="flex flex-col gap-8 mt-10 lg:gap-12">
       <ProjectArticlePreview :portfolio-preview-details="HILO"></ProjectArticlePreview>
       <ProjectArticlePreview :portfolio-preview-details="WEATHER"></ProjectArticlePreview>
       <ProjectArticlePreview :portfolio-preview-details="SPENDTRACK"></ProjectArticlePreview>

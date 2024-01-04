@@ -8,10 +8,10 @@ import { RouterLink } from 'vue-router'
     <RouterLink
       to="/"
       id="page-name"
-      class="shine text-green-700 font-bold text-5xl tracking-tighter text-center mt-8 mb-4 lg:text-5xl lg:m-8"
+      class="shine text-green-700 font-bold text-5xl tracking-tighter text-center mt-8 mb-4 p-2 lg:text-5xl lg:m-8"
       >About</RouterLink>
 
-    <nav class="flex flex-row gap-2 text-lg text-center lg:gap-8">
+    <nav class="flex flex-row gap-2 text-lg text-center lg:text-2xl lg:gap-8">
       <RouterLink to="/" class="hover:text-green-700 font-light">Home</RouterLink> |
       <div class="text-green-700 font-light">About</div> |
       <RouterLink to="/projects" class="hover:text-green-700 font-light">Projects</RouterLink> |
@@ -21,10 +21,10 @@ import { RouterLink } from 'vue-router'
 
   <div id="about-content" class="flex flex-col items-center justify-center max-w-xs lg:max-w-6xl">
     
-    <img src="../assets/pictures/ProfilePicture.jpg" class="rounded-full mt-10 mb-4 w-56 h-56" />
-    <p class="text-center text-2xl font-bold">That's me (right).</p>
+    <img src="../assets/pictures/ProfilePicture.jpg" class="rounded-full mt-10 mb-4 w-56 h-56"/>
+    <p class="text-center text-2xl font-bold">That's me (on the right).</p>
 
-    <div id="about-me" class="flex flex-col mt-8 gap-8 items-center text-center text-lg lg:text-xl">
+    <div id="about-me" class="flex flex-col mt-8 gap-8 items-center text-center text-lg lg:text-2xl">
       <p class="font-light">
         My name is Alexander Bhojwani, I'm 29 this year and I'm a self-trained full stack software
         engineer.
@@ -47,30 +47,30 @@ import { RouterLink } from 'vue-router'
 
         <h1 class="font-bold text-center text-2xl mb-5 lg:text-3xl">Languages & Frameworks</h1>
 
-        <div class="flex flex-row flex-wrap place-items-center justify-center gap-y-2">
+        <div class="flex flex-row flex-wrap place-items-center justify-center gap-y-2 lg:gap-x-4">
           <div class="flex flex-col place-items-center justify-center">
             <img src="../assets/fullColourIcons/PythonIcon.png" class="h-24 w-24" />
-            <p>Python</p>
+            <p class="lg:text-xl">Python</p>
           </div>
 
           <div class="flex flex-col text-center place-items-center justify-center">
             <img src="../assets/fullColourIcons/JavascriptIcon.png" class="h-24 w-24" />
-            <p>Javascript</p>
+            <p class="lg:text-xl">Javascript</p>
           </div>
 
           <div class="flex flex-col place-items-center justify-center">
             <img src="../assets/fullColourIcons/TypescriptIcon.png" class="h-24 w-24" />
-            <p>Typescript</p>
+            <p class="lg:text-xl">Typescript</p>
           </div>
 
           <div class="flex flex-col place-items-center justify-center">
             <img src="../assets/fullColourIcons/TailwindIcon.png" class="h-24 w-24" />
-            <p>Tailwind</p>
+            <p class="lg:text-xl">Tailwind</p>
           </div>
 
           <div class="flex flex-col place-items-center justify-center">
             <img src="../assets/fullColourIcons/VueIcon.svg" class="scale-75 h-24 w-24" />
-            <p>Vue</p>
+            <p class="lg:text-xl">Vue</p>
           </div>
         </div>
 
@@ -80,20 +80,20 @@ import { RouterLink } from 'vue-router'
 
         <h1 class="font-bold text-center text-2xl mb-5 lg:text-3xl">Technologies</h1>
         
-        <div class="flex flex-row flex-wrap place-items-center justify-center gap-y-2">
+        <div class="flex flex-row flex-wrap place-items-center justify-center gap-y-2 lg:gap-x-4">
           <div class="flex flex-col place-items-center justify-center">
             <img src="../assets/fullColourIcons/awsIcon.png" class="h-24 w-24" />
-            <p>AWS</p>
+            <p class="lg:text-xl">AWS</p>
           </div>
 
           <div class="flex flex-col text-center place-items-center justify-center">
             <img src="../assets/fullColourIcons/DOIcon.png" class="h-24 w-24" />
-            <p>DigitalOcean</p>
+            <p class="lg:text-xl">DigitalOcean</p>
           </div>
 
           <div class="flex flex-col place-items-center justify-center">
             <img src="../assets/fullColourIcons/AdobeCCIcon.png" class="h-24 w-24" />
-            <p>Adobe CC</p>
+            <p class="lg:text-xl">Adobe CC</p>
           </div>
         </div>
       </section>
@@ -102,15 +102,15 @@ import { RouterLink } from 'vue-router'
 
         <h1 class="font-bold text-center text-2xl mb-5 lg:text-3xl">Currently Learning</h1>
 
-        <div class="flex flex-row flex-wrap place-items-center justify-center gap-y-2">
+        <div class="flex flex-row flex-wrap place-items-center justify-center gap-y-2 lg:gap-x-4">
           <div class="flex flex-col place-items-center justify-center">
             <img src="../assets/fullColourIcons/ThreeJSIcon.svg" class="h-24 w-24" />
-            <p>ThreeJS</p>
+            <p class="lg:text-xl">ThreeJS</p>
           </div>
 
           <div class="flex flex-col place-items-center justify-center">
             <img src="../assets/fullColourIcons/ReactIcon.svg" class="scale-[0.85] h-24 w-24" />
-            <p>React</p>
+            <p class="lg:text-xl">React</p>
           </div>
         </div>
       </section>
