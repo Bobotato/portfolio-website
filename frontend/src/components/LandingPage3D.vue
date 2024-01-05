@@ -6,7 +6,7 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 
 import LoadingSpinner from '@/components/LoadingSpinner.vue'
 
-import { loadGLTFModel } from '@/utils/modelLoader'
+// import { loadGLTFModel } from '@/utils/modelLoader'
 
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 
@@ -81,7 +81,7 @@ onMounted(() => {
     antialias: true,
     });
     
-    let rex;
+    let rex: any;
 
     loader.load('/src/assets/3DModels/rexModel.gltf', function(gltf) {
       const model = gltf.scene;
