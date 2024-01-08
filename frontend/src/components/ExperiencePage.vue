@@ -3,7 +3,7 @@ import { RouterLink } from 'vue-router'
 
 import ExperienceArticle from './ExperienceArticle.vue'
 
-import { FOODALICIOUSCONCEPTS, SMILEPEPPER, FREELANCEWORK } from '@/assets/text/ExperienceData';
+import { FOODALICIOUSCONCEPTS, SMILEPEPPER, FREELANCEWORK } from '@/utils/ExperienceData';
 </script>
 
 <template>
@@ -109,3 +109,4 @@ import { FOODALICIOUSCONCEPTS, SMILEPEPPER, FREELANCEWORK } from '@/assets/text/
   }
 }
 </style>
+@/utils/ExperienceData

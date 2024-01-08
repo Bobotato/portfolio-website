@@ -83,7 +83,7 @@ onMounted(() => {
     
     let rex: any;
 
-    loader.load('/src/assets/3DModels/rexModel.gltf', function(gltf) {
+    loader.load('/assets/3DModels/rexModel.gltf', function(gltf) {
       const model = gltf.scene;
       scene.add(model);
       rex = model;

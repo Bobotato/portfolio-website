@@ -21,7 +21,7 @@ import { RouterLink } from 'vue-router'
 
   <div id="about-content" class="flex flex-col items-center justify-center max-w-xs lg:max-w-6xl">
     
-    <img src="../assets/pictures/ProfilePicture.jpg" class="rounded-full mt-10 mb-4 w-56 h-56"/>
+    <img src="/assets/pictures/ProfilePicture.jpg" class="rounded-full mt-10 mb-4 w-56 h-56"/>
     <p class="text-center text-2xl font-bold">That's me (on the right).</p>
 
     <div id="about-me" class="flex flex-col mt-8 gap-8 items-center text-center text-lg lg:text-2xl">
@@ -49,27 +49,27 @@ import { RouterLink } from 'vue-router'
 
         <div class="flex flex-row flex-wrap place-items-center justify-center gap-y-2 lg:gap-x-4">
           <div class="flex flex-col place-items-center justify-center">
-            <img src="../assets/fullColourIcons/PythonIcon.png" class="h-24 w-24" />
+            <img src="/assets/fullColourIcons/PythonIcon.png" class="h-24 w-24" />
             <p class="lg:text-xl">Python</p>
           </div>
 
           <div class="flex flex-col text-center place-items-center justify-center">
-            <img src="../assets/fullColourIcons/JavascriptIcon.png" class="h-24 w-24" />
+            <img src="/assets/fullColourIcons/JavascriptIcon.png" class="h-24 w-24" />
             <p class="lg:text-xl">Javascript</p>
           </div>
 
           <div class="flex flex-col place-items-center justify-center">
-            <img src="../assets/fullColourIcons/TypescriptIcon.png" class="h-24 w-24" />
+            <img src="/assets/fullColourIcons/TypescriptIcon.png" class="h-24 w-24" />
             <p class="lg:text-xl">Typescript</p>
           </div>
 
           <div class="flex flex-col place-items-center justify-center">
-            <img src="../assets/fullColourIcons/TailwindIcon.png" class="h-24 w-24" />
+            <img src="/assets/fullColourIcons/TailwindIcon.png" class="h-24 w-24" />
             <p class="lg:text-xl">Tailwind</p>
           </div>
 
           <div class="flex flex-col place-items-center justify-center">
-            <img src="../assets/fullColourIcons/VueIcon.svg" class="scale-75 h-24 w-24" />
+            <img src="/assets/fullColourIcons/VueIcon.svg" class="scale-75 h-24 w-24" />
             <p class="lg:text-xl">Vue</p>
           </div>
         </div>
@@ -82,17 +82,17 @@ import { RouterLink } from 'vue-router'
         
         <div class="flex flex-row flex-wrap place-items-center justify-center gap-y-2 lg:gap-x-4">
           <div class="flex flex-col place-items-center justify-center">
-            <img src="../assets/fullColourIcons/awsIcon.png" class="h-24 w-24" />
+            <img src="/assets/fullColourIcons/awsIcon.png" class="h-24 w-24" />
             <p class="lg:text-xl">AWS</p>
           </div>
 
           <div class="flex flex-col text-center place-items-center justify-center">
-            <img src="../assets/fullColourIcons/DOIcon.png" class="h-24 w-24" />
+            <img src="/assets/fullColourIcons/DOIcon.png" class="h-24 w-24" />
             <p class="lg:text-xl">DigitalOcean</p>
           </div>
 
           <div class="flex flex-col place-items-center justify-center">
-            <img src="../assets/fullColourIcons/AdobeCCIcon.png" class="h-24 w-24" />
+            <img src="/assets/fullColourIcons/AdobeCCIcon.png" class="h-24 w-24" />
             <p class="lg:text-xl">Adobe CC</p>
           </div>
         </div>
@@ -104,12 +104,12 @@ import { RouterLink } from 'vue-router'
 
         <div class="flex flex-row flex-wrap place-items-center justify-center gap-y-2 lg:gap-x-4">
           <div class="flex flex-col place-items-center justify-center">
-            <img src="../assets/fullColourIcons/ThreeJSIcon.svg" class="h-24 w-24" />
+            <img src="/assets/fullColourIcons/ThreeJSIcon.svg" class="h-24 w-24" />
             <p class="lg:text-xl">ThreeJS</p>
           </div>
 
           <div class="flex flex-col place-items-center justify-center">
-            <img src="../assets/fullColourIcons/ReactIcon.svg" class="scale-[0.85] h-24 w-24" />
+            <img src="/assets/fullColourIcons/ReactIcon.svg" class="scale-[0.85] h-24 w-24" />
             <p class="lg:text-xl">React</p>
           </div>
         </div>

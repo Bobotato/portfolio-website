@@ -3,7 +3,7 @@ import { RouterLink } from 'vue-router'
 
 import ProjectArticlePreview from './ProjectArticle.vue';
 
-import { WEATHER, HILO, SPENDTRACK, PORTFOLIO } from '@/assets/text/PortfolioData';
+import { WEATHER, HILO, SPENDTRACK, PORTFOLIO } from '@/utils/PortfolioData';
 </script>
 
 <template>
@@ -96,4 +96,4 @@ import { WEATHER, HILO, SPENDTRACK, PORTFOLIO } from '@/assets/text/PortfolioDat
   }
 }
 </style>
-@/assets/text/PortfolioData
+@/assets/text/PortfolioData@/utils/PortfolioData

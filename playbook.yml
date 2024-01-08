@@ -60,16 +60,6 @@
         username: "{{ dockerhub_username }}"
         password: "{{ dockerhub_password }}"
 
-    - name: Create api.env file
-      ansible.builtin.copy:
-        dest: api.env
-        src: api.env
-
-    - name: Create db.env file
-      ansible.builtin.copy: 
-        dest: db.env
-        src: db.env
-
     - name: Create docker-compose file
       ansible.builtin.copy:
         dest: docker-compose.yml

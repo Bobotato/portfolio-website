@@ -18,7 +18,7 @@ const FOODALICIOUSCONCEPTS: ExperiencePreview = {
                "Built low-tech ordering and database system for online orders using Google forms integrated with Google sheets, with AWS S3 for backups",
                "Reduced manpower costs for delivery ops to negligible amounts, accomodating total order revenue reaching 5 digit figures daily across 3 outlets",
                "Marketing strategy revamp led increase to 1mm yearly projected revenue during COVID crisis without increasing manpower costs and minimal tech expenditure" ],
-    previewImgURI: "src/assets/pictures/FoodaliciousConceptsLogo.png",
+    previewImgURI: "assets/pictures/FoodaliciousConceptsLogo.png",
     link: "https://chunkylobsters.com"
 }
 
@@ -30,7 +30,7 @@ const SMILEPEPPER: ExperiencePreview = {
     jobList: [ "Collaborated on the design and build of SmilePepper.com using Vue, Wordpress and WooCommerce",
                "Collaborated with UIUX and developers to align customer flows derived from Google Analytics and Mouseflow with application operation flows",
                "Cut more than 50% of monthly cloud service expenditure by flagging, then optimising droplet usage and removing unnecessary overspend", ],
-    previewImgURI: "src/assets/pictures/SmilePepperLogo.png",
+    previewImgURI: "assets/pictures/SmilePepperLogo.png",
     link: "https://smilepepper.com"
 }
 
@@ -38,7 +38,7 @@ const FREELANCEWORK: ExperiencePreview = {
     title: "Freelance Work",
     duration: "Ongoing",
     shortdesc: "While learning to become a full stack developer, I designed and built websites for clients to improve my understanding of good web design, as well as working with actual clients to achieve their business needs within a deadline.",
-    previewImgURI: "src/assets/pictures/ZhangTuitionLogo.png",
+    previewImgURI: "assets/pictures/ZhangTuitionLogo.png",
 }
 
 export { FOODALICIOUSCONCEPTS, SMILEPEPPER, FREELANCEWORK }
