@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { PortfolioPreview } from '@/assets/text/PortfolioData';
+import type { PortfolioPreview } from '@/utils/PortfolioData';
 
 interface Props {
     portfolioPreviewDetails: PortfolioPreview

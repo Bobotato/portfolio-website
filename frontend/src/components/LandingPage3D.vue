@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import { ref, onMounted } from 'vue';
+import { ref, Ref, onMounted } from 'vue';
 
-import { Scene, PerspectiveCamera, WebGLRenderer, PointLight, Box3 } from 'three';
+import { Scene, PerspectiveCamera, WebGLRenderer, PointLight, AmbientLight } from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 
 import LoadingSpinner from '@/components/LoadingSpinner.vue'
@@ -10,8 +10,6 @@ import LoadingSpinner from '@/components/LoadingSpinner.vue'
 
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 
-
-// let isLoading = ref(true)
 
 // const rex3d = ref<HTMLCanvasElement | null>(null)
 
@@ -68,20 +66,48 @@ let isLoading = ref(true)
 
 const rex3d = ref<HTMLCanvasElement | null>(null)
 
-const loader = new GLTFLoader();
-
 const scene = new Scene();
 
-const camera = new PerspectiveCamera(20, 1, 0.1, 1000);
+function lightSetUp() {
+  const pointLight = new PointLight(0xffffff, 50);
+  pointLight.position.set(3,3,3);
 
-onMounted(() => {
+  return { pointLight }
+}
 
-    const renderer = new WebGLRenderer({
-    canvas: rex3d.value as unknown as HTMLCanvasElement,
+function cameraSetUp(x: number, y: number, z: number) {
+  const camera = new PerspectiveCamera(20, 1, 0.1, 1000);
+  camera.position.set(x,y,z);
+
+  return { camera }
+}
+
+function rendererSetUp(canvas: Ref<HTMLCanvasElement | null>) {
+  const renderer = new WebGLRenderer({
+    canvas: canvas.value as unknown as HTMLCanvasElement,
     antialias: true,
     });
+
+  renderer.setPixelRatio(window.devicePixelRatio);
+  renderer.setClearColor( 0xffffff, 0);
+  renderer.setSize(400,400);
+
+  return {renderer}
+}
+
+function controlsSetUp(camera: PerspectiveCamera, domElement: HTMLElement) {
+  const controls = new OrbitControls(camera, domElement);
+  controls.enablePan = false;
+  controls.enableZoom = false;
+
+  return { controls }
+}
+
+onMounted(() => {
     
     let rex: any;
+
+    const loader = new GLTFLoader();
 
     loader.load('/assets/3DModels/rexModel.gltf', function(gltf) {
       const model = gltf.scene;
@@ -91,22 +117,16 @@ onMounted(() => {
       isLoading.value = false;
       })
 
-    renderer.setPixelRatio(window.devicePixelRatio);
-    renderer.setClearColor( 0xffffff, 0);
-    renderer.setSize(400,400);
-    camera.position.setZ(10);
-    camera.position.setY(2);
-    camera.position.setX(1);
+    const { camera } = cameraSetUp(1,2,10);
+    
+    const { renderer } = rendererSetUp(rex3d)
 
     renderer.render( scene, camera );
 
-    const pointLight = new PointLight(0xffffff, 50);
-    pointLight.position.set(3,3,3);
+    const { pointLight } = lightSetUp()
     scene.add(pointLight);
 
-    const controls = new OrbitControls(camera, renderer.domElement);
-    controls.enablePan = false;
-    controls.enableZoom = false;
+    const { controls } = controlsSetUp(camera, renderer.domElement)
 
     function animate() {
       if(rex)
@@ -118,7 +138,6 @@ onMounted(() => {
     }
 
     animate()
-
 })
 </script>
 

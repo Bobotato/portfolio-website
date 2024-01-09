@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { ExperiencePreview } from '@/assets/text/ExperienceData';
+import type { ExperiencePreview } from '@/utils/ExperienceData';
 
 interface Props {
     experienceDetails: ExperiencePreview

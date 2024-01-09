@@ -96,4 +96,3 @@ import { WEATHER, HILO, SPENDTRACK, PORTFOLIO } from '@/utils/PortfolioData';
   }
 }
 </style>
-@/assets/text/PortfolioData@/utils/PortfolioData
