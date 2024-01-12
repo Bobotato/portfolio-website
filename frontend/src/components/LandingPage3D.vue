@@ -1,7 +1,9 @@
 <script setup lang="ts">
-import { ref, Ref, onMounted } from 'vue';
+import { ref, onMounted } from 'vue';
 
-import { Scene, PerspectiveCamera, WebGLRenderer, PointLight, AmbientLight } from 'three';
+import type { Ref } from 'vue';
+
+import { Scene, PerspectiveCamera, WebGLRenderer, PointLight } from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 
 import LoadingSpinner from '@/components/LoadingSpinner.vue'

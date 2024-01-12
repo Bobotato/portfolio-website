@@ -5,7 +5,7 @@ export interface ExperiencePreview {
     shortdesc: string
     jobList?: Array<string>
     previewImgURI: string
-    previewImgMobileURI?: string
+    previewImgURIDark: string
     link?: string
 }
 
@@ -19,6 +19,7 @@ const FOODALICIOUSCONCEPTS: ExperiencePreview = {
                "Reduced manpower costs for delivery ops to negligible amounts, accomodating total order revenue reaching 5 digit figures daily across 3 outlets",
                "Marketing strategy revamp led increase to 1mm yearly projected revenue during COVID crisis without increasing manpower costs and minimal tech expenditure" ],
     previewImgURI: "assets/pictures/FoodaliciousConceptsLogo.png",
+    previewImgURIDark: "assets/pictures/FoodaliciousConceptsLogo.png",
     link: "https://chunkylobsters.com"
 }
 
@@ -31,6 +32,7 @@ const SMILEPEPPER: ExperiencePreview = {
                "Collaborated with UIUX and developers to align customer flows derived from Google Analytics and Mouseflow with application operation flows",
                "Cut more than 50% of monthly cloud service expenditure by flagging, then optimising droplet usage and removing unnecessary overspend", ],
     previewImgURI: "assets/pictures/SmilePepperLogo.png",
+    previewImgURIDark: "assets/pictures/SmilePepperLogoDark.png",
     link: "https://smilepepper.com"
 }
 
@@ -39,6 +41,7 @@ const FREELANCEWORK: ExperiencePreview = {
     duration: "Ongoing",
     shortdesc: "While learning to become a full stack developer, I designed and built websites for clients to improve my understanding of good web design, as well as working with actual clients to achieve their business needs within a deadline.",
     previewImgURI: "assets/pictures/ZhangTuitionLogo.png",
+    previewImgURIDark: "assets/pictures/ZhangTuitionLogoDark.png",
 }
 
 export { FOODALICIOUSCONCEPTS, SMILEPEPPER, FREELANCEWORK }
