@@ -1,0 +1,38 @@
+name: SSH into droplet and update docker image
+
+on:
+  workflow_dispatch:
+
+  push:
+    branches:
+      - 'main'
+
+permissions: write-all
+
+env:
+  TF_LOG: INFO
+  TF_INPUT: false
+
+jobs:
+  droplet-update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v3
+
+      - name: Install doctl
+        uses: digitalocean/action-doctl@v2
+        with:
+          token: ${{ secrets.DO_PAT }}
+
+      - name: Update image on droplet via SSH action
+        uses: appleboy/ssh-action@v0.1.3
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USERNAME }}
+          key: ${{ secrets.SSH_KEY }}
+          passphrase: ${{ secrets.SSH_PASSPHRASE }}
+          script: |
+            docker compose down
+            docker compose pull && docker compose up
+            docker image prune
