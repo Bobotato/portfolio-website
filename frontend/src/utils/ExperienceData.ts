@@ -39,7 +39,7 @@ const SMILEPEPPER: ExperiencePreview = {
 const FREELANCEWORK: ExperiencePreview = {
     title: "Freelance Work",
     duration: "Ongoing",
-    shortdesc: "While learning to become a full stack developer, I designed and built websites for clients to improve my understanding of good web design, as well as working with actual clients to achieve their business needs within a deadline.",
+    shortdesc: "While learning to become a full stack developer, I designed and built websites and small applications for friends, family and referrals. These helped with the soft skills involved with negotiating and working with clients, and exposed me to the rigours of working with actual clients to achieve their business needs within a deadline.",
     previewImgURI: "assets/pictures/ZhangTuitionLogo.png",
     previewImgURIDark: "assets/pictures/ZhangTuitionLogoDark.png",
 }

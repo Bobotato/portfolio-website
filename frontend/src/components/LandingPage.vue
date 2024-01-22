@@ -19,7 +19,7 @@ import ThemeToggle from '@/components/ThemeToggle.vue';
         </div>
       </div>
 
-      <div id="work-title" class="text-center text-slate-800 -mt-6 text-3xl lg:text-4xl dark:text-gray-300">
+      <div id="work-title" class="text-center text-slate-800 -mt-10 text-3xl lg:text-4xl dark:text-gray-300 lg:-mt-4">
         Full Stack Developer
       </div>
 
@@ -65,18 +65,18 @@ import ThemeToggle from '@/components/ThemeToggle.vue';
     </section>
   </div>
 
-  <section class="flex flex-col justify-center items-center lg:absolute lg:w-3/5 lg:bottom-2">
+  <section class="flex flex-col justify-center items-center w-4/5 mb-4 lg:absolute lg:w-3/5 lg:bottom-2 lg:mb-0">
 
-    <hr id="divider-footer" class="mt-12 mb-4 w-1/2 border-slate-800 dark:border-green-900 border-1" />
+    <hr id="footer-divider" class="mt-12 mb-4 w-1/2 border-2 border-slate-800 dark:border-green-900 lg:border-[1px]" />
 
-    <div id="footer-content" class="flex flex-row gap-4 justify-center items-center">
-
-      <span class="block text-sm text-center text-slate-800 dark:text-gray-300">© 2023 Alexander Bhojwani. A portfolio website made with <a href="https://vuejs.org/" class="hover:text-green-700">Vue</a>.</span>
-      
-      <ThemeToggle></ThemeToggle>
-
+    <div id="footer-content" class="flex flex-col gap-2 justify-center items-center lg:flex-row lg:gap-2">
+      <span id="footer-note" class="block text-sm font-light text-center text-slate-800 dark:text-gray-300">© 2023 Alexander Bhojwani.</span>
+      <span id="footer-note" class="block text-sm font-light text-center text-slate-800 dark:text-gray-300">A portfolio website made with <a href="https://vuejs.org/" class="hover:text-green-700">Vue</a>.</span>
+      <ThemeToggle id="theme-toggle"></ThemeToggle>
     </div>
+
   </section>
+
 </main>
 </template>
 
