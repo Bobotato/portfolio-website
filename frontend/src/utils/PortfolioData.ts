@@ -36,7 +36,7 @@ const SPENDTRACK: PortfolioPreview = {
 
 const PORTFOLIO: PortfolioPreview = {
     title: "Portfolio Website",
-    desc: "This very website was built as a way of testing myself to produce a polished, responsive but user-friendly website with a new niche framework (ThreeJS).",
+    desc: "This very website was built as a way of testing myself to produce a polished, responsive and user-friendly website with an inclusion of an unfamiliar niche framework (ThreeJS). I also used the opportunity to create a CICD pipeline that would automate the update of the remote host, so that I would only have to worry about building the website content.",
     previewImgURI: "assets/pictures/PortfolioLogo.png",
     previewImgURIDark: "assets/pictures/PortfolioLogoDark.png",
     stack: ['Tailwind', 'CSS', 'Vue', 'Three', 'Typescript' ],
