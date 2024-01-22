@@ -58,7 +58,7 @@ import ThemeToggle from '@/components/ThemeToggle.vue';
         </li>
 
       </ul>
-    </section>3
+    </section>
 
     <section id="rex3d" class="flex relative -mt-12 scale-[0.6] lg:mt-0 lg:scale-100">
       <LandingPage3D></LandingPage3D>
