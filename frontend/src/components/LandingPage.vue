@@ -6,7 +6,7 @@ import ThemeToggle from '@/components/ThemeToggle.vue';
 </script>
 
 <template>
-<main class="flex flex-col items-center justify-center max-w-screen-md w-screen h-screen lg:max-w-full">
+<main class="flex flex-col items-center justify-center max-w-screen-md w-screen lg:max-w-full lg:h-screen">
   <div class="flex flex-col-reverse items-center lg:flex-row">
     <section class="flex flex-col items-center gap-8 -mt-20 lg:mt-0 lg:w-7/12 lg:items-start">
 
@@ -58,7 +58,7 @@ import ThemeToggle from '@/components/ThemeToggle.vue';
         </li>
 
       </ul>
-    </section>
+    </section>3
 
     <section id="rex3d" class="flex relative -mt-12 scale-[0.6] lg:mt-0 lg:scale-100">
       <LandingPage3D></LandingPage3D>
@@ -67,7 +67,7 @@ import ThemeToggle from '@/components/ThemeToggle.vue';
 
   <section class="flex flex-col justify-center items-center w-4/5 mb-4 lg:absolute lg:w-3/5 lg:bottom-2 lg:mb-0">
 
-    <hr id="footer-divider" class="mt-12 mb-4 w-1/2 border-2 border-slate-800 dark:border-green-900 lg:border-[1px]" />
+    <hr id="footer-divider" class="mt-12 mb-4 w-1/2 border-2 border-slate-800 dark:border-green-900" />
 
     <div id="footer-content" class="flex flex-col gap-2 justify-center items-center lg:flex-row lg:gap-2">
       <span id="footer-note" class="block text-sm font-light text-center text-slate-800 dark:text-gray-300">© 2023 Alexander Bhojwani.</span>

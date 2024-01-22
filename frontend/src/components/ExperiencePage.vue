@@ -49,16 +49,16 @@ import { FOODALICIOUSCONCEPTS, SMILEPEPPER, FREELANCEWORK } from '@/utils/Experi
   </section>
 </main>
 
-<footer class="flex flex-col justify-center items-center mt-12 lg:mt-8 lg:p-4">
+<footer class="flex flex-col justify-center items-center mt-12 p-4 lg:mt-8 lg:p-4">
 
-<hr id="divider-footer" class="mb-8 w-2/6 border-slate-800 dark:border-green-900 lg:mb-2" />
+<hr id="divider-footer" class="mb-4 w-4/6 border-2 border-slate-800 dark:border-green-900 lg:mb-2" />
 
-<div id="footer-content" class="flex flex-row gap-2 justify-center items-center">
+<div id="footer-content" class="flex flex-col-reverse mb-4 justify-center items-center lg:gap-2 lg:flex-row lg:mb-0">
 
   <span id="footer-note" class="block text-sm font-light text-center text-slate-800 dark:text-gray-300">© 2023 Alexander Bhojwani.</span>
   <span id="footer-note" class="block text-sm font-light text-center text-slate-800 dark:text-gray-300">A portfolio website made with <a href="https://vuejs.org/" class="hover:text-green-700">Vue</a>.</span>
   
-<ThemeToggle></ThemeToggle>
+  <ThemeToggle></ThemeToggle>
 
 </div>
 

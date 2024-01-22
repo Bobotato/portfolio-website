@@ -50,29 +50,29 @@ import ContactLinkList from '@/components/ContactLinkList.vue'
 
         <h1 class="font-bold text-center text-2xl mb-5 lg:text-3xl">Languages & Frameworks</h1>
 
-        <div class="flex flex-row flex-wrap place-items-center justify-center gap-y-2 lg:gap-x-4 lg:text-base">
-          <div class="flex flex-col place-items-center justify-center">
-            <img src="/assets/fullColourIcons/PythonIcon.png" class="h-20 w-20" />
+        <div class="flex flex-row flex-wrap place-items-center justify-center gap-x-4 gap-y-2 text-sm lg:gap-x-4 lg:text-base">
+          <div class="flex flex-col place-items-center justify-center transform transition duration-200 hover:scale-110">
+            <img src="/assets/fullColourIcons/PythonIcon.png" class="h-16 w-16 lg:h-20 lg:w-20" />
             <p>Python</p>
           </div>
 
-          <div class="flex flex-col text-center place-items-center justify-center">
-            <img src="/assets/fullColourIcons/JavascriptIcon.png" class="h-20 w-20" />
+          <div class="flex flex-col text-center place-items-center justify-center transform transition duration-200 hover:scale-110">
+            <img src="/assets/fullColourIcons/JavascriptIcon.png" class="h-16 w-16 lg:h-20 lg:w-20" />
             <p>Javascript</p>
           </div>
 
-          <div class="flex flex-col place-items-center justify-center">
-            <img src="/assets/fullColourIcons/TypescriptIcon.png" class="h-20 w-20" />
+          <div class="flex flex-col place-items-center justify-center transform transition duration-200 hover:scale-110">
+            <img src="/assets/fullColourIcons/TypescriptIcon.png" class="h-16 w-16 lg:h-20 lg:w-20" />
             <p>Typescript</p>
           </div>
 
-          <div class="flex flex-col place-items-center justify-center">
-            <img src="/assets/fullColourIcons/TailwindIcon.png" class="h-20 w-20" />
+          <div class="flex flex-col place-items-center justify-center transform transition duration-200 hover:scale-110">
+            <img src="/assets/fullColourIcons/TailwindIcon.png" class="h-16 w-16 lg:h-20 lg:w-20" />
             <p>Tailwind</p>
           </div>
 
-          <div class="flex flex-col place-items-center justify-center">
-            <img src="/assets/fullColourIcons/VueIcon.svg" class="scale-75 h-20 w-20" />
+          <div class="flex flex-col place-items-center justify-center transform transition duration-200 hover:scale-110">
+            <img src="/assets/fullColourIcons/VueIcon.svg" class="scale-75 h-16 w-16 lg:h-20 lg:w-20" />
             <p>Vue</p>
           </div>
         </div>
@@ -83,19 +83,19 @@ import ContactLinkList from '@/components/ContactLinkList.vue'
 
         <h1 class="font-bold text-center text-2xl mb-5 lg:text-3xl">Technologies</h1>
         
-        <div class="flex flex-row flex-wrap place-items-center justify-center gap-y-2 lg:gap-x-4 lg:text-base">
-          <div class="flex flex-col place-items-center justify-center">
-            <img src="/assets/fullColourIcons/awsIcon.svg" class="h-20 w-20 dark:text-gray-300" />
+        <div class="flex flex-row flex-wrap place-items-center justify-center gap-x-4 gap-y-2 lg:gap-x-4 lg:text-base">
+          <div class="flex flex-col place-items-center justify-center transform transition duration-200 hover:scale-110">
+            <img src="/assets/fullColourIcons/awsIcon.svg" class="h-16 w-16 lg:h-20 lg:w-20 dark:text-gray-300" />
             <p>AWS</p>
           </div>
 
-          <div class="flex flex-col text-center place-items-center justify-center">
-            <img src="/assets/fullColourIcons/DOIcon.png" class="h-20 w-20" />
+          <div class="flex flex-col text-center place-items-center justify-center transform transition duration-200 hover:scale-110">
+            <img src="/assets/fullColourIcons/DOIcon.png" class="h-16 w-16 lg:h-20 lg:w-20" />
             <p>DigitalOcean</p>
           </div>
 
-          <div class="flex flex-col place-items-center justify-center">
-            <img src="/assets/fullColourIcons/AdobeCCIcon.png" class="h-20 w-20" />
+          <div class="flex flex-col place-items-center justify-center transform transition duration-200 hover:scale-110">
+            <img src="/assets/fullColourIcons/AdobeCCIcon.png" class="h-16 w-16 lg:h-20 lg:w-20" />
             <p>Adobe CC</p>
           </div>
         </div>
@@ -105,14 +105,14 @@ import ContactLinkList from '@/components/ContactLinkList.vue'
 
         <h1 class="font-bold text-center text-2xl mb-5 lg:text-3xl">Currently Learning</h1>
 
-        <div class="flex flex-row flex-wrap place-items-center justify-center gap-y-2 lg:gap-x-4 lg:text-base">
-          <div class="flex flex-col place-items-center justify-center">
-            <img src="/assets/fullColourIcons/ThreeJSIcon.svg" class="h-20 w-20"/>
+        <div class="flex flex-row flex-wrap place-items-center justify-center gap-x-4 gap-y-2 lg:gap-x-4 lg:text-base">
+          <div class="flex flex-col place-items-center justify-center transform transition duration-200 hover:scale-110">
+            <img src="/assets/fullColourIcons/ThreeJSIcon.svg" class="h-16 w-16 lg:h-20 lg:w-20"/>
             <p>ThreeJS</p>
           </div>
 
-          <div class="flex flex-col place-items-center justify-center">
-            <img src="/assets/fullColourIcons/ReactIcon.svg" class="scale-[0.85] h-20 w-20" />
+          <div class="flex flex-col place-items-center justify-center transform transition duration-200 hover:scale-110">
+            <img src="/assets/fullColourIcons/ReactIcon.svg" class="scale-[0.85] h-16 w-16 lg:h-20 lg:w-20" />
             <p>React</p>
           </div>
         </div>
@@ -122,16 +122,16 @@ import ContactLinkList from '@/components/ContactLinkList.vue'
   </div>
 </main>
 
-<footer class="flex flex-col justify-center items-center mt-12 lg:mt-8 lg:p-4">
+<footer class="flex flex-col justify-center items-center mt-12 p-4 lg:mt-8 lg:p-4">
 
-    <hr id="divider-footer" class="mb-8 w-2/6 border-slate-800 dark:border-green-900 lg:mb-2" />
+    <hr id="divider-footer" class="mb-4 w-4/6 border-2 border-slate-800 dark:border-green-900 lg:mb-2" />
 
-    <div id="footer-content" class="flex flex-row gap-2 justify-center items-center">
+    <div id="footer-content" class="flex flex-col-reverse mb-4 justify-center items-center lg:gap-2 lg:flex-row lg:mb-0">
 
       <span id="footer-note" class="block text-sm font-light text-center text-slate-800 dark:text-gray-300">© 2023 Alexander Bhojwani.</span>
       <span id="footer-note" class="block text-sm font-light text-center text-slate-800 dark:text-gray-300">A portfolio website made with <a href="https://vuejs.org/" class="hover:text-green-700">Vue</a>.</span>
       
-    <ThemeToggle></ThemeToggle>
+      <ThemeToggle></ThemeToggle>
 
     </div>
 
