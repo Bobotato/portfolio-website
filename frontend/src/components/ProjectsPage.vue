@@ -30,6 +30,7 @@ import { WEATHER, HILO, SPENDTRACK, PORTFOLIO } from '@/utils/PortfolioData';
       <ProjectArticlePreview :portfolio-preview-details="HILO"></ProjectArticlePreview>
       <ProjectArticlePreview :portfolio-preview-details="WEATHER"></ProjectArticlePreview>
       <ProjectArticlePreview :portfolio-preview-details="SPENDTRACK"></ProjectArticlePreview>
+      <ProjectArticlePreview :portfolio-preview-details="OVERLORD"></ProjectArticlePreview>
       <ProjectArticlePreview :portfolio-preview-details="PORTFOLIO"></ProjectArticlePreview>
     </div>
   </section>

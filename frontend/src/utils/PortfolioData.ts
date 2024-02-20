@@ -34,6 +34,15 @@ const SPENDTRACK: PortfolioPreview = {
     github: "https://github.com/Bobotato/spendtrack"
 }
 
+const OVERLORD: PortfolioPreview = {
+    title: "Overlord",
+    desc: "This full-stack project was built to learn how to use AI and prompt engineering to offload some daily management and planning tasks, improving my efficiency. It uses the ChatGPT-3.5-Turbo API to filter and prioritise my daily tasks by relevance and importance towards a predefined monthly goal.",
+    previewImgURI: "assets/pictures/OverlordLogo.png",
+    previewImgURIDark: "assets/pictures/OverlordLogoDark.png",
+    stack: ['Tailwind', 'CSS', 'Vue', 'Python', 'OpenAI', 'Typescript' ],
+    github: "https://github.com/Bobotato/overlord-be"
+}
+
 const PORTFOLIO: PortfolioPreview = {
     title: "Portfolio Website",
     desc: "This very website was built as a way of testing myself to produce a polished, responsive and user-friendly website with an inclusion of an unfamiliar niche framework (ThreeJS). I also used the opportunity to create a CICD pipeline that would automate the update of the remote host, so that I would only have to worry about building the website content.",
