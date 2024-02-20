@@ -5,7 +5,7 @@ import ContactLinkList from '@/components/ContactLinkList.vue';
 import ProjectArticlePreview from '@/components/ProjectArticle.vue';
 import ThemeToggle from '@/components/ThemeToggle.vue';
 
-import { WEATHER, HILO, SPENDTRACK, PORTFOLIO } from '@/utils/PortfolioData';
+import { WEATHER, HILO, OVERLORD, SPENDTRACK, PORTFOLIO } from '@/utils/PortfolioData';
 </script>
 
 <template>

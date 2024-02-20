@@ -52,4 +52,4 @@ const PORTFOLIO: PortfolioPreview = {
     github: "https://github.com/Bobotato/portfolio-website"
 }
 
-export { WEATHER, HILO, SPENDTRACK, PORTFOLIO }
+export { WEATHER, HILO, SPENDTRACK, OVERLORD, PORTFOLIO }
