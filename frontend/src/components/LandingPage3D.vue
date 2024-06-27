@@ -6,7 +6,7 @@ import type { Ref } from 'vue';
 import { Scene, PerspectiveCamera, WebGLRenderer, PointLight } from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 
-import LoadingSpinner from '@/components/LoadingSpinner.vue'
+import LoadingSpinner from '@/components/utils/LoadingSpinner.vue'
 
 // import { loadGLTFModel } from '@/utils/modelLoader'
 
