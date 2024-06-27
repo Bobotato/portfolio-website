@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import type { WritableComputedRef } from 'vue'
 import { useDark } from '@vueuse/core'
 
-import type { ExperiencePreview } from '@/utils/ExperienceData'
+import type { WritableComputedRef } from 'vue'
+import type { ExperiencePreview } from '@/types/experienceTypes'
 
 const isDark: WritableComputedRef<boolean> = useDark()
 

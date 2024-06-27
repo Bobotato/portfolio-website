@@ -4,9 +4,9 @@ const experienceData: ExperiencePreview[] = [
   {
     title: 'SmilePepper',
     position: 'Full Stack Dev, Marketing, Design',
-    duration: '2022 - 2023',
+    duration: '2022 - 2024',
     shortdesc:
-      'In this startup, I worked primarily as a junior frontend dev, building our product using Vue3 and Tailwind. I also did the marketing, financials and graphic design.',
+      'In this startup, I worked primarily as a junior full-stack dev, building our product using Vue3 and Node.js. I also did the marketing, graphic design, and collaborated with our UIUX designer to develop the user experience.',
     jobList: [
       'Collaborated on the design and build of SmilePepper.com using Vue, Wordpress and WooCommerce',
       'Collaborated with UIUX and developers to align customer flows derived from Google Analytics and Mouseflow with application operation flows',
