@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import ExperiencePage from '@/components/ExperiencePage.vue'
+import ExperiencePage from '@/components/experiencePortfolio/ExperiencePage.vue'
 </script>
 
 <template>

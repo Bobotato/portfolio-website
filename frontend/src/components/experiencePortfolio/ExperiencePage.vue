@@ -2,10 +2,10 @@
 import { RouterLink } from 'vue-router'
 
 import ContactLinkList from '@/components/ContactLinkList.vue'
-import ExperienceArticle from '@/components/ExperienceArticle.vue'
+import ExperienceArticle from '@/components/experiencePortfolio/ExperienceArticle.vue'
 import ThemeToggle from '@/components/ThemeToggle.vue'
 
-import { FOODALICIOUSCONCEPTS, SMILEPEPPER, FREELANCEWORK } from '@/utils/ExperienceData'
+import { experienceData } from '@/data/ExperienceData'
 </script>
 
 <template>
@@ -58,9 +58,9 @@ import { FOODALICIOUSCONCEPTS, SMILEPEPPER, FREELANCEWORK } from '@/utils/Experi
 
     <section class="flex flex-col items-center justify-center">
       <div id="experience-articles" class="flex flex-col gap-8 mt-10 lg:max-w-4xl lg:gap-2 lg:mt-4">
-        <ExperienceArticle :experience-details="SMILEPEPPER"></ExperienceArticle>
-        <ExperienceArticle :experience-details="FOODALICIOUSCONCEPTS"></ExperienceArticle>
-        <ExperienceArticle :experience-details="FREELANCEWORK"></ExperienceArticle>
+        <div v-for="(item, index) in experienceData">
+          <ExperienceArticle :key=index :experience-details="item"></ExperienceArticle>
+        </div>
       </div>
     </section>
   </main>

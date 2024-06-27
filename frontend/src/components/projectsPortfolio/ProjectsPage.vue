@@ -2,7 +2,7 @@
 import { RouterLink } from 'vue-router'
 
 import ContactLinkList from '@/components/ContactLinkList.vue'
-import ProjectArticlePreview from '@/components/ProjectArticle.vue'
+import ProjectArticlePreview from '@/components/projectsPortfolio/ProjectArticle.vue'
 import ThemeToggle from '@/components/ThemeToggle.vue'
 
 import { portfolioData } from '@/data/PortfolioData'
@@ -35,8 +35,8 @@ import { portfolioData } from '@/data/PortfolioData'
 
     <section>
       <div id="portfolio-projects" class="flex flex-col gap-8 mt-10 lg:max-w-4xl lg:gap-2">
-        <div v-for="item in portfolioData">
-          <ProjectArticlePreview :portfolio-preview-details="item"></ProjectArticlePreview>
+        <div v-for="item, index in portfolioData">
+          <ProjectArticlePreview :key=index :portfolio-preview-details="item"></ProjectArticlePreview>
         </div>
       </div>
     </section>

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import ProjectsPage from '@/components/ProjectsPage.vue'
+import ProjectsPage from '@/components/projectsPortfolio/ProjectsPage.vue'
 </script>
 
 <template>
