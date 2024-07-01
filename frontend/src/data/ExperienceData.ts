@@ -8,9 +8,11 @@ const experienceData: ExperiencePreview[] = [
     shortdesc:
       'In this startup, I worked primarily as a junior full-stack dev, building our product using Vue3 and Node.js. I also did the marketing, graphic design, and collaborated with our UIUX designer to develop the user experience.',
     jobList: [
-      'Collaborated on the design and build of SmilePepper.com using Vue, Wordpress and WooCommerce',
-      'Collaborated with UIUX and developers to align customer flows derived from Google Analytics and Mouseflow with application operation flows',
-      'Cut more than 50% of monthly cloud service expenditure by flagging, then optimising droplet usage and removing unnecessary overspend'
+      'Designed and co-developed SmilePepper webapp and API using Vue3 and NodeJS',
+      'Improved API call response time by redesigning fetching functions and data storage shape to use time complexity optimised access methods',
+      'Cut more than 50% monthly cloud service expenditure by analysing and optimising cloud service usage',
+      'Researched and co-implemented payment gateway to accept Singapore exclusive payment methods for monetisation strategy',
+      'Implemented front-end testing using Cypress and integrated automated testing into BitBucket CI pipeline'
     ],
     previewImgURI: 'assets/pictures/SmilePepperLogo.png',
     previewImgURIDark: 'assets/pictures/SmilePepperLogoDark.png',
