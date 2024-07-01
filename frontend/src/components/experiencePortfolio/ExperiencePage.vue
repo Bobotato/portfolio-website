@@ -34,7 +34,10 @@ import { experienceData } from '@/data/ExperienceData'
     </section>
 
     <section class="flex flex-col items-center justify-center">
-      <div id="experience-articles" class="flex flex-col gap-8 mt-10 lg:max-w-4xl lg:gap-6 lg:mt-4">
+      <div
+        id="experience-articles"
+        class="flex flex-col gap-8 mt-2 p-4 lg:p-0 lg:max-w-4xl lg:gap-6 lg:mt-4"
+      >
         <div v-for="(item, index) in experienceData">
           <ExperienceArticle :key="index" :experience-details="item"></ExperienceArticle>
         </div>
