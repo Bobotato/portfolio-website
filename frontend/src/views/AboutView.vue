@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import AboutPage from '@/components/AboutPage.vue'
+import AboutPage from '@/components/about/AboutPage.vue'
 import Footer from '@/components/utils/footer/Footer.vue'
 import NavBar from '@/components/utils/navbar/NavBar.vue'
 
