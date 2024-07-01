@@ -1,4 +1,4 @@
-FROM node:18 as build-stage
+FROM node:18 AS build-stage
 
 WORKDIR /app
 
@@ -11,7 +11,7 @@ COPY ./ .
 RUN npm run build
 
 
-FROM nginx as prod-stage
+FROM nginx AS prod-stage
 
 RUN mkdir /app
 

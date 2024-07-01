@@ -1,9 +1,11 @@
 <script setup lang="ts">
-import LandingPage from '@/components/LandingPage.vue';
+import LandingPage from '@/components/home/LandingPage.vue'
+import Footer from '@/components/utils/footer/Footer.vue'
 </script>
 
 <template>
-  <main>
+  <div>
     <LandingPage></LandingPage>
-  </main>
+    <Footer></Footer>
+  </div>
 </template>
