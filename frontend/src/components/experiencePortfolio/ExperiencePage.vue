@@ -5,11 +5,11 @@ import { experienceData } from '@/data/ExperienceData'
 </script>
 
 <template>
-  <main class="flex flex-col max-w-screen-2xl mx-auto items-center">
+  <main class="flex flex-col max-w-screen-2xl mx-auto items-center gap-6">
     <section id="resume-link-button">
       <a target="_blank" rel="noreferrer noopener">
         <button
-          class="bg-slate-800 dark:bg-green-900 w-60 h-12 rounded-lg mt-10 transform transition duration-200 hover:scale-110 hover:bg-slate-700 hover:dark:bg-green-800 lg:w-64 lg:h-16"
+          class="bg-slate-800 dark:bg-green-900 w-60 h-12 rounded-lg mt-10 hover:bg-slate-700 hover:dark:bg-green-800 lg:w-64 lg:h-16"
         >
           <div class="flex flex-row items-center justify-center text-lg gap-3 -ml-2 text-white">
             <svg
@@ -34,7 +34,7 @@ import { experienceData } from '@/data/ExperienceData'
     </section>
 
     <section class="flex flex-col items-center justify-center">
-      <div id="experience-articles" class="flex flex-col gap-8 mt-10 lg:max-w-4xl lg:gap-2 lg:mt-4">
+      <div id="experience-articles" class="flex flex-col gap-8 mt-10 lg:max-w-4xl lg:gap-6 lg:mt-4">
         <div v-for="(item, index) in experienceData">
           <ExperienceArticle :key="index" :experience-details="item"></ExperienceArticle>
         </div>

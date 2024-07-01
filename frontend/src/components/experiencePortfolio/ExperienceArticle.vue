@@ -16,10 +16,10 @@ const props = defineProps<Props>()
 
 <template>
   <div
-    class="flex flex-col rounded-lg p-3 dark:text-gray-300 hover:bg-blue-900 dark:hover:bg-green-700 hover:bg-opacity-20 dark:hover:bg-opacity-10 lg:p-12"
+    class="flex flex-col rounded-lg border accordion-light dark:accordion-dark accordion-light-hover-blue accordion-dark-hover-green p-3 lg:p-12"
   >
     <Accordion>
-      <template #accordionHeader="{ toggle }">
+      <template #accordionHeader="{ toggle, expanded }">
         <div @click="toggle()">
           <div class="flex flex-col gap-2 items-center justify-center lg:grid lg:grid-cols-2">
             <section id="company-image" class="flex items-center justify-center mb-12">
@@ -55,6 +55,13 @@ const props = defineProps<Props>()
                 </p>
               </div>
             </section>
+
+            <div
+              class="transition-transform duration-300 flex items-center justify-center w-5 h-5"
+              :class="{ 'rotate-180': expanded }"
+            >
+              <img src="assets/fullColourIcons/ArrowDownIcon.svg" alt="toggle" />
+            </div>
           </div>
         </div>
       </template>
@@ -64,13 +71,13 @@ const props = defineProps<Props>()
           v-if="props.experienceDetails.jobList"
           class="stack flex flex-row gap-4 mt-6 flex-wrap"
         >
-          <div
+          <ul
             v-for="job in props.experienceDetails.jobList"
             :key="job"
             class="text-lg text-left font-light lg:text-base"
           >
             <li class="font-light">{{ job }}</li>
-          </div>
+          </ul>
         </div>
       </template>
     </Accordion>
