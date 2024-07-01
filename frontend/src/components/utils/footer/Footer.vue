@@ -1,6 +1,6 @@
 <script lang="ts" setup>
-import ContactLinkList from '@/components/footer/ContactLinkList.vue'
-import ThemeToggle from '@/components/footer/ThemeToggle.vue'
+import ContactLinkList from '@/components/utils/footer/ContactLinkList.vue'
+import ThemeToggle from '@/components/utils/footer/ThemeToggle.vue'
 </script>
 
 <template>
