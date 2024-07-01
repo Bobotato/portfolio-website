@@ -60,7 +60,7 @@ const props = defineProps<Props>()
               class="transition-transform duration-300 flex items-center justify-center w-5 h-5"
               :class="{ 'rotate-180': expanded }"
             >
-              <img src="assets/fullColourIcons/ArrowDownIcon.svg" alt="toggle" />
+              <img src="/assets/fullColourIcons/ArrowDownIcon.svg" alt="toggle" />
             </div>
           </div>
         </div>
