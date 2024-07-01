@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { RouterLink } from 'vue-router'
-
 import ExperienceArticle from '@/components/experiencePortfolio/ExperienceArticle.vue'
 
 import { experienceData } from '@/data/ExperienceData'
@@ -38,10 +36,9 @@ import { experienceData } from '@/data/ExperienceData'
     <section class="flex flex-col items-center justify-center">
       <div id="experience-articles" class="flex flex-col gap-8 mt-10 lg:max-w-4xl lg:gap-2 lg:mt-4">
         <div v-for="(item, index) in experienceData">
-          <ExperienceArticle :key=index :experience-details="item"></ExperienceArticle>
+          <ExperienceArticle :key="index" :experience-details="item"></ExperienceArticle>
         </div>
       </div>
     </section>
   </main>
-
 </template>

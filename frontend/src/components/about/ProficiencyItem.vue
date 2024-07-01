@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { ProficiencyItem } from '@/types/proficiencyTypes'
+import type { ProficiencyItem } from '@/types/proficiencyTypes'
 
 interface Props {
   proficencyItem: ProficiencyItem
