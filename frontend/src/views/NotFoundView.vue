@@ -5,10 +5,10 @@ import Footer from '@/components/utils/footer/Footer.vue'
 </script>
 
 <template>
-  <div class="flex flex-col mx-auto items-center justify-center w-screen h-screen overflow-hidden py-10">
+  <div class="flex flex-col mx-auto items-center justify-center overflow-hidden py-10">
     <div class="flex flex-col items-center justify-center mt-10">
       <h1 class="text-4xl font-bold dark:text-white">Not found.</h1>
-      <p class="mt-2 dark:text-white">There's nothing here.</p>
+      <p class="mt-2 dark:text-white">There's nothing here but dust and footprints.</p>
     </div>
     <WalkingAnim></WalkingAnim>
 
