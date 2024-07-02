@@ -9,7 +9,6 @@ const isDark:WritableComputedRef<boolean> = useDark()
 const toggleDark = useToggle(isDark)
 
 onMounted(() => {
-  console.log(isDark.value)
   if (isDark.value === true) {
     document.documentElement.classList.add('dark');
   } else {

@@ -22,20 +22,20 @@ const props = defineProps<Props>()
       <template #accordionHeader="{ toggle, expanded }">
         <div @click="toggle()">
           <div class="flex flex-col gap-2 items-center justify-center lg:grid lg:grid-cols-2">
-            <section id="company-image" class="flex items-center justify-center p-4 lg:mb-12">
+            <section id="company-image" class="flex items-center justify-center max-w-sm p-4 lg:mb-12">
               <img
                 :src="props.experienceDetails.previewImgURI"
                 v-if="!isDark"
-                class="max-h-36 max-w-xs lg:max-h-60"
+                class="max-h-36 lg:max-h-60 object-contain"
               />
               <img
                 :src="props.experienceDetails.previewImgURIDark"
                 v-else
-                class="max-h-36 max-w-xs lg:max-h-60"
+                class="max-h-36 lg:max-h-60 object-contain"
               />
             </section>
 
-            <section class="flex flex-col px-8">
+            <section class="flex flex-col px-4 lg:px-8">
               <div class="flex flex-col gap-4">
                 <h1 id="experience-title" class="text-3xl text-left font-bold">
                   {{ props.experienceDetails.title }}

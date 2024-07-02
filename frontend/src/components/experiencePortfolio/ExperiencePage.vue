@@ -5,7 +5,7 @@ import { experienceData } from '@/data/ExperienceData'
 </script>
 
 <template>
-  <main class="flex flex-col max-w-screen-2xl mx-auto items-center gap-6">
+  <main class="flex flex-col mx-auto items-center gap-6 px-4 lg:max-w-4xl">
     <section id="resume-link-button">
       <a target="_blank" rel="noreferrer noopener">
         <button
