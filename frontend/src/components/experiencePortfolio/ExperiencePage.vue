@@ -5,7 +5,7 @@ import { experienceData } from '@/data/ExperienceData'
 </script>
 
 <template>
-  <main class="flex flex-col max-w-screen-2xl mx-auto items-center gap-6">
+  <main class="flex flex-col mx-auto items-center gap-6 px-4 lg:max-w-4xl">
     <section id="resume-link-button">
       <a target="_blank" rel="noreferrer noopener">
         <button
@@ -36,7 +36,7 @@ import { experienceData } from '@/data/ExperienceData'
     <section class="flex flex-col items-center justify-center">
       <div
         id="experience-articles"
-        class="flex flex-col gap-8 mt-2 p-4 lg:p-0 lg:max-w-4xl lg:gap-6 lg:mt-4"
+        class="flex flex-col gap-6 mt-2 p-4 lg:p-0 lg:max-w-4xl lg:mt-4"
       >
         <div v-for="(item, index) in experienceData">
           <ExperienceArticle :key="index" :experience-details="item"></ExperienceArticle>

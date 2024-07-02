@@ -11,18 +11,18 @@ import ProficiencyItem from '@/components/about/ProficiencyItem.vue'
 
       <div
         id="about-me"
-        class="flex flex-col mt-8 gap-8 items-center text-center text-lg lg:text-base dark:text-gray-300"
+        class="flex flex-col mt-8 gap-4 items-center text-center text-lg lg:gap-8 lg:text-base dark:text-gray-300"
       >
-        <p class="font-light">
+        <p class="text-sm font-light lg:text-lg">
           My name is Alexander Bhojwani, I'm 29 this year and I'm a full-stack software engineer.
         </p>
-        <p class="font-light">
+        <p class="text-sm font-light lg:text-lg">
           I graduated from Singapore Management University with a BSc of Economics (hons) and I am
           currently working in a startup I cofounded called
           <a href="https://www.smilepepper.com/" class="hover:text-blue-700">SmilePepper</a> as a
           junior SWE (among other roles).
         </p>
-        <p class="font-light">
+        <p class="text-sm font-light lg:text-lg">
           I also have a strong background as a creative, with many years of corporate design work
           under my sleeve.
         </p>

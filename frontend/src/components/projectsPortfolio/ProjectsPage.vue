@@ -7,10 +7,10 @@ import { portfolioData } from '@/data/PortfolioData'
 <template>
   <main
     id="projects-page"
-    class="flex flex-col max-w-screen-2xl mx-auto items-center justify-center w-screen"
+    class="max-w-screen-2xl mx-auto items-center"
   >
-    <section>
-      <div id="portfolio-projects" class="flex flex-col gap-8 mt-10 lg:max-w-4xl lg:gap-2">
+    <section class="flex flex-col items-center justify-center mt-8">
+      <div id="portfolio-projects" class="flex flex-col p-4 lg:p-0 lg:max-w-4xl lg:gap-6 lg:mt-4">
         <div v-for="(item, index) in portfolioData">
           <ProjectArticlePreview
             :key="index"
