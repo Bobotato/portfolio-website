@@ -15,7 +15,7 @@ const props = defineProps<Props>()
 
 <template>
   <div
-    class="flex flex-col rounded-lg p-3 hover:bg-blue-900 dark:text-gray-300 dark:hover:bg-green-700 hover:bg-opacity-10 dark:hover:bg-opacity-10 lg:p-12"
+    class="flex flex-col rounded-lg border accordion-light dark:accordion-dark accordion-light-hover-blue accordion-dark-hover-green p-3 lg:p-12"
   >
     <div class="flex flex-col gap-2 items-center justify-center lg:grid lg:grid-cols-2">
       <section id="project-logo" class="flex items-center justify-center">

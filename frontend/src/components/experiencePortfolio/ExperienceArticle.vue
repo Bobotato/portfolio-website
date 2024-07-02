@@ -37,7 +37,7 @@ const props = defineProps<Props>()
 
             <section class="flex flex-col px-8">
               <div class="flex flex-col gap-4">
-                <h1 id="experience-title" class="text-4xl text-left font-bold">
+                <h1 id="experience-title" class="text-3xl text-left font-bold">
                   {{ props.experienceDetails.title }}
                 </h1>
                 <h1
@@ -47,10 +47,10 @@ const props = defineProps<Props>()
                 >
                   {{ props.experienceDetails.position }}
                 </h1>
-                <h1 id="experience-duration" class="text-xl text-left font-medium lg:text-base">
+                <h1 id="experience-duration" class="text-lg text-left font-medium lg:text-base">
                   {{ props.experienceDetails.duration }}
                 </h1>
-                <p id="experience-description" class="text-lg text-left font-light lg:text-base">
+                <p id="experience-description" class="text-md text-left font-light lg:text-base">
                   {{ props.experienceDetails.shortdesc }}
                 </p>
                 <a
@@ -78,12 +78,12 @@ const props = defineProps<Props>()
       <template #accordionContent>
         <div
           v-if="props.experienceDetails.jobList"
-          class="stack flex flex-row gap-4 mt-6 flex-wrap px-8 lg:mb-0"
+          class="stack flex flex-col gap-6 mt-6 flex-wrap px-8 lg:mb-4"
         >
           <ul
             v-for="job in props.experienceDetails.jobList"
             :key="job"
-            class="text-lg text-left font-light lg:text-base"
+            class="text-md text-left font-light lg:text-base"
           >
             <li class="font-light">{{ job }}</li>
           </ul>

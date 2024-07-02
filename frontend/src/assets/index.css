@@ -10,7 +10,7 @@
         @apply hover:bg-blue-900 hover:bg-opacity-20
     }
     .accordion-dark {
-        @apply bg-slate-300 bg-opacity-5 border-opacity-20 text-gray-300 border-white border-r-gray-500 border-b-gray-500 shadow-md
+        @apply bg-slate-500 bg-opacity-5 border-opacity-20 text-gray-300 border-white border-r-gray-500 border-b-gray-500 shadow-md
     }
     .accordion-dark-hover-green {
         @apply dark:hover:bg-green-700 dark:hover:bg-opacity-10 dark:hover:border-green-300 dark:hover:border-opacity-50 dark:hover:border-b-green-800  dark:hover:border-r-green-800 
