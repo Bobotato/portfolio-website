@@ -4,5 +4,6 @@ export interface PortfolioPreview {
     previewImgURI: string
     previewImgURIDark: string
     stack: Array<string>
-    github: string
+    github?: string
+    features?: Array<string>
 }

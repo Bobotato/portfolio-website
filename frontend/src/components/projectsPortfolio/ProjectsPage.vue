@@ -14,7 +14,7 @@ import { portfolioData } from '@/data/PortfolioData'
         <div v-for="(item, index) in portfolioData">
           <ProjectArticlePreview
             :key="index"
-            :portfolio-preview-details="item"
+            :portfolio-data="item"
           ></ProjectArticlePreview>
         </div>
       </div>
