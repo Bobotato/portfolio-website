@@ -16,7 +16,7 @@ const props = defineProps<Props>()
 
 <template>
   <div
-    class="flex flex-col rounded-lg border accordion-light dark:accordion-dark accordion-light-hover-blue accordion-dark-hover-green p-3 lg:p-12"
+    class="flex flex-col rounded-lg border accordion-light dark:accordion-dark accordion-light-hover-blue accordion-dark-hover-green p-3 lg:px-12 lg:pt-12 lg:pb-6"
   >
     <Accordion>
       <template #accordionHeader="{ toggle, expanded }">
