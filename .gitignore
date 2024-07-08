@@ -138,6 +138,13 @@ terraform.rc
 
 # Ignore vscode config files
 .vscode/*
+
+# Cypress files
+frontend/cypress/results/*
+frontend/cypress/reports/*
+frontend/cypress/screenshots/*
+frontend/cypress/videos/*
+
 # PyBuilder
 .pybuilder/
 target/
