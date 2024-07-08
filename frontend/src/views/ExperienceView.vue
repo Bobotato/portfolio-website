@@ -1,16 +1,16 @@
 <script setup lang="ts">
-import ExperiencePage from '@/components/experiencePortfolio/ExperiencePage.vue'
+import ExperiencePage from '@/components/experience/ExperiencePage.vue'
 import NavBar from '@/components/utils/navbar/NavBar.vue'
 import NavBarMobile from '@/components/utils/navbar/NavBarMobile.vue'
 import Footer from '@/components/utils/footer/Footer.vue'
 
-import { breakpointsTailwind, useBreakpoints } from '@vueuse/core';
+import { breakpointsTailwind, useBreakpoints } from '@vueuse/core'
 
 import { NavItems } from '@/data/NavItems'
 
-const breakpoints = useBreakpoints(breakpointsTailwind);
-const lgAndLarger = breakpoints.greaterOrEqual('lg');
-const lgAndSmaller = breakpoints.smallerOrEqual('lg');
+const breakpoints = useBreakpoints(breakpointsTailwind)
+const lgAndLarger = breakpoints.greaterOrEqual('lg')
+const lgAndSmaller = breakpoints.smallerOrEqual('lg')
 </script>
 
 <template>

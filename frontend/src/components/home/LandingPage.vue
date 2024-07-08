@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { RouterLink } from 'vue-router'
 
-import LandingPage3D from '@/components/LandingPage3D.vue'
+import Model from '@/components/utils/Model.vue'
 </script>
 
 <template>
@@ -32,6 +32,7 @@ import LandingPage3D from '@/components/LandingPage3D.vue'
 
         <nav
           id="nav-menu-landing"
+          d
           class="flex flex-col items-center w-2/12 gap-4 text-2xl text-center lg:items-start lg:text-left dark:text-gray-300"
         >
           <RouterLink to="/about" class="hover:text-green-700">About</RouterLink>
@@ -108,12 +109,10 @@ import LandingPage3D from '@/components/LandingPage3D.vue'
         </ul>
       </section>
 
-      <section id="rex3d" class="flex relative -mt-12 scale-[0.6] lg:mt-0 lg:scale-100">
-        <LandingPage3D></LandingPage3D>
+      <section id="3Delement" class="flex relative -mt-12 scale-[0.6] lg:mt-0 lg:scale-100">
+        <Model></Model>
       </section>
     </div>
-
-
   </main>
 </template>
 

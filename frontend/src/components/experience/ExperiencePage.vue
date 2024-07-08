@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import ExperienceArticle from '@/components/experiencePortfolio/ExperienceArticle.vue'
+import ExperienceArticle from '@/components/experience/ExperienceArticle.vue'
 
 import { experienceData } from '@/data/ExperienceData'
 </script>
