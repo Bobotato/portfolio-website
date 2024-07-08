@@ -115,25 +115,3 @@ import Model from '@/components/utils/Model.vue'
     </div>
   </main>
 </template>
-
-<style scoped>
-.shine {
-  mask-image: linear-gradient(
-    -60deg,
-    rgba(245, 250, 255, 1) 40%,
-    rgba(231, 0, 0, 0.5) 50%,
-    rgba(251, 253, 255, 1) 60%
-  );
-  mask-size: 300%;
-  animation: shine-effect 6s linear infinite;
-}
-
-@keyframes shine-effect {
-  from {
-    mask-position: 200% 0%;
-  }
-  to {
-    mask-position: -100% 0%;
-  }
-}
-</style>
