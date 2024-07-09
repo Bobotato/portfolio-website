@@ -27,7 +27,7 @@ function isCurrentRoute(routeName: string): boolean {
 <template>
   <nav
     id="nav-menu"
-    class="flex flex-col text-slate-800 text-lg text-center lg:text-xl lg:gap-2 dark:text-gray-300"
+    class="flex flex-col mt-10 text-slate-800 text-lg text-center lg:text-xl lg:gap-2 dark:text-gray-300"
   >
     <RouterLink
       to="/"

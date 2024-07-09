@@ -43,7 +43,7 @@ import Model from '@/components/utils/Model.vue'
         <ul id="contact-menu-landing" class="flex flex-row mt-4 gap-8 items-center">
           <li class="text-xs">
             <a
-              class="block text-slate-800 dark:text-gray-300 hover:text-green-700"
+              class="block text-slate-800 dark:text-gray-300 hover:text-green-700 dark:hover:hover:text-green-700"
               href="https://github.com/bobotato"
               target="_blank"
               rel="noreferrer"
@@ -65,7 +65,7 @@ import Model from '@/components/utils/Model.vue'
 
           <li class="text-xs">
             <a
-              class="block text-slate-800 dark:text-gray-300 hover:text-green-700"
+              class="block text-slate-800 dark:text-gray-300 hover:text-green-700 dark:hover:hover:text-green-700"
               href="https://sg.linkedin.com/in/alexanderbhojwani"
               target="_blank"
               rel="noreferrer"
@@ -87,7 +87,7 @@ import Model from '@/components/utils/Model.vue'
 
           <li class="text-xs">
             <a
-              class="block text-slate-800 dark:text-gray-300 hover:text-green-700"
+              class="block text-slate-800 dark:text-gray-300 hover:text-green-700 dark:hover:hover:text-green-700"
               href="https://instagram.com/bobotato"
               target="_blank"
               rel="noreferrer"
