@@ -1,6 +1,6 @@
-import type { ExperiencePreview } from '@/types/experienceTypes'
+import type { ExperienceItem } from '@/types/experienceTypes'
 
-const experienceData: ExperiencePreview[] = [
+const experienceData: ExperienceItem[] = [
   {
     title: 'SmilePepper',
     position: 'Full Stack Dev, Marketing, Design',
@@ -14,8 +14,8 @@ const experienceData: ExperiencePreview[] = [
       '• Researched and co-implemented payment gateway to accept Singapore exclusive payment methods for monetisation strategy',
       '• Implemented front-end testing using Cypress and integrated automated testing into BitBucket CI pipeline'
     ],
-    previewImgURI: 'assets/pictures/SmilePepperLogo.png',
-    previewImgURIDark: 'assets/pictures/SmilePepperLogoDark.png',
+    imgSrc: 'assets/pictures/SmilePepperLogo.png',
+    imgSrcDark: 'assets/pictures/SmilePepperLogoDark.png',
     link: 'https://smilepepper.com'
   },
   {
@@ -30,8 +30,8 @@ const experienceData: ExperiencePreview[] = [
       '• Automated regular daily backups of thousands of customer and order data across 3 outlets to AWS S3 using Powershell scripts',
       '• Significantly reduced delivery operations overhead while accomodating hundreds of weekly order volume across 3 outlets, quadrupling daily revenue during COVID crisis without increasing manpower costs with minimal tech expenditure'
     ],
-    previewImgURI: 'assets/pictures/FoodaliciousConceptsLogo.png',
-    previewImgURIDark: 'assets/pictures/FoodaliciousConceptsLogo.png',
+    imgSrc: 'assets/pictures/FoodaliciousConceptsLogo.png',
+    imgSrcDark: 'assets/pictures/FoodaliciousConceptsLogo.png',
     link: 'https://chunkylobsters.com'
   },
   {
@@ -39,8 +39,8 @@ const experienceData: ExperiencePreview[] = [
     duration: 'Ongoing',
     shortdesc:
       'While learning to become a full stack developer, I designed and built websites and small applications for friends, family and referrals. These helped with the soft skills involved with negotiating and working with clients, and exposed me to the rigours of working with actual clients to achieve their business needs within a deadline.',
-    previewImgURI: 'assets/pictures/ZhangTuitionLogo.png',
-    previewImgURIDark: 'assets/pictures/ZhangTuitionLogoDark.png'
+    imgSrc: 'assets/pictures/ZhangTuitionLogo.png',
+    imgSrcDark: 'assets/pictures/ZhangTuitionLogoDark.png'
   }
 ]
 

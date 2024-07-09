@@ -15,4 +15,23 @@
     .accordion-dark-hover-green {
         @apply dark:hover:bg-green-700 dark:hover:bg-opacity-10 dark:hover:border-green-300 dark:hover:border-opacity-50 dark:hover:border-b-green-800  dark:hover:border-r-green-800 
     }
-}
+    .shine {
+        mask-image: linear-gradient(
+            -60deg,
+            rgba(245, 250, 255, 1) 40%,
+            rgba(231, 0, 0, 0.5) 50%,
+            rgba(251, 253, 255, 1) 60%
+        );
+        mask-size: 300%;
+        animation: shine-effect 6s linear infinite;
+        }
+        
+        @keyframes shine-effect {
+        from {
+            mask-position: 200% 0%;
+        }
+        to {
+            mask-position: -100% 0%;
+        }
+        }
+    }

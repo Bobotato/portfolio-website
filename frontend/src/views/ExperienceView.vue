@@ -14,7 +14,7 @@ const lgAndSmaller = breakpoints.smallerOrEqual('lg')
 </script>
 
 <template>
-  <div class="flex flex-col mx-auto items-center justify-center w-screen">
+  <div class="flex flex-col mx-auto items-center w-screen">
     <NavBar v-if="lgAndLarger" :nav-items="NavItems"></NavBar>
     <NavBarMobile v-if="lgAndSmaller" :nav-items="NavItems"></NavBarMobile>
     <ExperiencePage></ExperiencePage>

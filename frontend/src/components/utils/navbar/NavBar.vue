@@ -27,7 +27,7 @@ function isCurrentRoute(routeName: string): boolean {
 <template>
   <nav
     id="nav-menu"
-    class="flex flex-col text-slate-800 text-lg text-center lg:text-xl lg:gap-2 dark:text-gray-300"
+    class="flex flex-col mt-10 text-slate-800 text-lg text-center lg:text-xl lg:gap-2 dark:text-gray-300"
   >
     <RouterLink
       to="/"
@@ -52,25 +52,3 @@ function isCurrentRoute(routeName: string): boolean {
     </div>
   </nav>
 </template>
-
-<style scoped>
-.shine {
-  mask-image: linear-gradient(
-    -60deg,
-    rgba(245, 250, 255, 1) 40%,
-    rgba(231, 0, 0, 0.5) 50%,
-    rgba(251, 253, 255, 1) 60%
-  );
-  mask-size: 300%;
-  animation: shine-effect 6s linear infinite;
-}
-
-@keyframes shine-effect {
-  from {
-    mask-position: 200% 0%;
-  }
-  to {
-    mask-position: -100% 0%;
-  }
-}
-</style>
