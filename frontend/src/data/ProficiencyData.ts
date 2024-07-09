@@ -34,6 +34,7 @@ const languageItems: ProficiencyItem[] = [
   {
     name: 'Next.js',
     imgSrc: '/assets/fullColourIcons/NextIcon.svg',
+    imgSrcDark: '/assets/fullColourIcons/NextIconDark.svg',
     link: 'https://nextjs.org/'
   }
 ]
@@ -60,6 +61,7 @@ const technologyItems: ProficiencyItem[] = [
     {
       name: 'ThreeJS',
       imgSrc: "/assets/fullColourIcons/ThreeJSIcon.svg",
+      imgSrcDark: "/assets/fullColourIcons/ThreeJSIconDark.svg",
       link: 'https://threejs.org/'
     }
   ]

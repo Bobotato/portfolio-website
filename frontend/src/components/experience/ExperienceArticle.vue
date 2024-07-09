@@ -3,12 +3,12 @@ import { useDark } from '@vueuse/core'
 import Accordion from '@/components/utils/Accordion.vue'
 
 import type { WritableComputedRef } from 'vue'
-import type { ExperiencePreview } from '@/types/experienceTypes'
+import type { ExperienceItem } from '@/types/experienceTypes'
 
 const isDark: WritableComputedRef<boolean> = useDark()
 
 interface Props {
-  experienceDetails: ExperiencePreview
+  experienceDetails: ExperienceItem
 }
 
 const props = defineProps<Props>()
@@ -16,21 +16,22 @@ const props = defineProps<Props>()
 
 <template>
   <div
-    class="flex flex-col rounded-lg border accordion-light dark:accordion-dark accordion-light-hover-blue accordion-dark-hover-green p-3 pb-8 lg:p-12 lg:pb-8"
+    class="cursor-pointer flex flex-col rounded-lg border accordion-light dark:accordion-dark accordion-light-hover-blue accordion-dark-hover-green p-3 pb-8 lg:p-12 lg:pb-8"
   >
     <Accordion>
       <template #accordionHeader="{ toggle, expanded }">
         <div @click="toggle()">
           <div class="flex flex-col gap-2 items-center justify-center lg:grid lg:grid-cols-2">
-            <section id="company-image" class="flex items-center justify-center max-w-sm p-4 lg:mb-12">
+            <section
+              id="company-image"
+              class="flex items-center justify-center max-w-sm p-4 lg:mb-12"
+            >
               <img
-                :src="props.experienceDetails.previewImgURI"
-                v-if="!isDark"
-                class="max-h-36 lg:max-h-60 object-contain"
-              />
-              <img
-                :src="props.experienceDetails.previewImgURIDark"
-                v-else
+                :src="
+                  isDark && props.experienceDetails.imgSrcDark
+                    ? props.experienceDetails.imgSrcDark
+                    : props.experienceDetails.imgSrc
+                "
                 class="max-h-36 lg:max-h-60 object-contain"
               />
             </section>

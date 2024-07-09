@@ -1,9 +1,9 @@
-export interface PortfolioPreview {
-    title: string
-    desc: string
-    previewImgURI: string
-    previewImgURIDark: string
-    stack: Array<string>
-    github?: string
-    features?: Array<string>
+export interface PortfolioItem {
+  title: string
+  desc: string
+  imgSrc: string
+  imgSrcDark: string
+  stack: Array<string>
+  github?: string
+  features?: Array<string>
 }

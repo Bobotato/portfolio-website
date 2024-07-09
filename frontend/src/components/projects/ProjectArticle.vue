@@ -3,12 +3,12 @@ import { useDark } from '@vueuse/core'
 import Accordion from '@/components/utils/Accordion.vue'
 
 import type { WritableComputedRef } from 'vue'
-import type { PortfolioPreview } from '@/types/portfolioTypes'
+import type { PortfolioItem } from '@/types/portfolioTypes'
 
 const isDark: WritableComputedRef<boolean> = useDark()
 
 interface Props {
-  portfolioData: PortfolioPreview
+  portfolioData: PortfolioItem
 }
 
 const props = defineProps<Props>()
@@ -16,7 +16,7 @@ const props = defineProps<Props>()
 
 <template>
   <div
-    class="flex flex-col rounded-lg border accordion-light dark:accordion-dark accordion-light-hover-blue accordion-dark-hover-green p-3 lg:px-12 lg:pt-12 lg:pb-6"
+    class="cursor-pointer flex flex-col rounded-lg border accordion-light dark:accordion-dark accordion-light-hover-blue accordion-dark-hover-green p-3 lg:px-12 lg:pt-12 lg:pb-6"
   >
     <Accordion>
       <template #accordionHeader="{ toggle, expanded }">
@@ -24,13 +24,11 @@ const props = defineProps<Props>()
           <div class="flex flex-col gap-2 items-center justify-center lg:grid lg:grid-cols-2">
             <section id="project-logo" class="flex items-center justify-center">
               <img
-                :src="props.portfolioData.previewImgURI"
-                v-if="!isDark"
-                class="max-h-36 max-w-xs lg:max-h-60"
-              />
-              <img
-                :src="props.portfolioData.previewImgURIDark"
-                v-else
+                :src="
+                  isDark && props.portfolioData.imgSrcDark
+                    ? props.portfolioData.imgSrcDark
+                    : props.portfolioData.imgSrc
+                "
                 class="max-h-36 max-w-xs lg:max-h-60"
               />
             </section>

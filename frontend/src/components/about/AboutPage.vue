@@ -19,8 +19,12 @@ import ProficiencyItem from '@/components/about/ProficiencyItem.vue'
         <p class="text-sm font-light lg:text-lg">
           I graduated from Singapore Management University with a BSc of Economics (hons) and I am
           currently working in a startup I cofounded called
-          <a href="https://www.smilepepper.com/" class="hover:text-blue-700">SmilePepper</a> as a
-          junior SWE (among other roles).
+          <a
+            href="https://www.smilepepper.com/"
+            class="hover:text-blue-700 hover:dark:text-green-500"
+            >SmilePepper</a
+          >
+          as a junior SWE (among other roles).
         </p>
         <p class="text-sm font-light lg:text-lg">
           I also have a strong background as a creative, with many years of corporate design work
@@ -39,8 +43,8 @@ import ProficiencyItem from '@/components/about/ProficiencyItem.vue'
           >
             <div v-for="item in languageItems">
               <ProficiencyItem :proficency-item="item"></ProficiencyItem>
-              </div>
             </div>
+          </div>
         </section>
 
         <section id="technologies" class="dark:text-gray-300">
@@ -49,11 +53,9 @@ import ProficiencyItem from '@/components/about/ProficiencyItem.vue'
           <div
             class="flex flex-row flex-wrap place-items-center justify-center gap-x-4 gap-y-2 lg:gap-x-4 lg:text-base"
           >
-
-          <div v-for="item in technologyItems">
+            <div v-for="item in technologyItems">
               <ProficiencyItem :proficency-item="item"></ProficiencyItem>
-              </div>
-
+            </div>
           </div>
         </section>
 
@@ -63,11 +65,10 @@ import ProficiencyItem from '@/components/about/ProficiencyItem.vue'
           <div
             class="flex flex-row flex-wrap place-items-center justify-center gap-x-4 gap-y-2 lg:gap-x-4 lg:text-base"
           >
-          <div v-for="item in learningItems">
+            <div v-for="item in learningItems">
               <ProficiencyItem :proficency-item="item"></ProficiencyItem>
-              </div>
-
             </div>
+          </div>
         </section>
       </div>
     </div>
