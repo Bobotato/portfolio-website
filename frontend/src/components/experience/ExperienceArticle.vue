@@ -33,6 +33,7 @@ const props = defineProps<Props>()
                     : props.experienceDetails.imgSrc
                 "
                 class="max-h-36 lg:max-h-60 object-contain"
+                alt="company-image"
               />
             </section>
 
@@ -51,7 +52,7 @@ const props = defineProps<Props>()
                 <h1 id="experience-duration" class="text-lg text-left font-medium lg:text-base">
                   {{ props.experienceDetails.duration }}
                 </h1>
-                <p id="experience-description" class="text-md text-left font-light lg:text-base">
+                <p id="experience-description" class="text-sm text-left font-light lg:text-base">
                   {{ props.experienceDetails.shortdesc }}
                 </p>
                 <a
@@ -79,12 +80,12 @@ const props = defineProps<Props>()
       <template #accordionContent>
         <div
           v-if="props.experienceDetails.jobList"
-          class="stack flex flex-col gap-6 mt-6 flex-wrap px-8 lg:mb-4"
+          class="stack flex flex-col gap-6 mt-6 flex-wrap px-4 lg:px-8 lg:mb-4"
         >
           <ul
             v-for="job in props.experienceDetails.jobList"
             :key="job"
-            class="text-md text-left font-light lg:text-base"
+            class="text-sm text-left font-light lg:text-base"
           >
             <li class="font-light">{{ job }}</li>
           </ul>
