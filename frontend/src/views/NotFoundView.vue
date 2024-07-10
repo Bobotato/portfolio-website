@@ -10,9 +10,9 @@ import Footer from '@/components/utils/footer/Footer.vue'
       <h1 class="text-4xl font-bold dark:text-white">Not found.</h1>
       <p class="mt-2 dark:text-white">There's nothing here but dust and footprints.</p>
     </div>
-    <WalkingAnim></WalkingAnim>
+    <WalkingAnim class="z-0"></WalkingAnim>
 
-    <RouterLink to="/" class="-mt-24 hover:text-green-700 dark:text-white">
+    <RouterLink to="/" class="-mt-24 z-10 hover:text-green-700 dark:text-white">
       Press here to go back home.</RouterLink
     >
     <Footer></Footer>

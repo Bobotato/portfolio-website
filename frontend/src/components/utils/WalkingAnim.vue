@@ -1,7 +1,7 @@
 <script lang="ts" setup></script>
 
 <template>
-  <div class="flex items-center justify-center">
+  <div class="flex items-center justify-center scale-75 lg:scale-100">
     <div class="flex flex-row items-center -rotate-[60deg]">
       <div class="flex flex-col gap-8 lg:gap-20">
         <img src="/assets/BWIcons/Foot.svg" class="stomp delay6 -rotate-12 invert dark:invert-0" />
