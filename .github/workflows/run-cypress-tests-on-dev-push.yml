@@ -3,7 +3,7 @@ name: Run Cypress tests on push to development
 on:
   push:
     branches:
-      - 'development'
+      - "development"
 
 permissions: write-all
 
@@ -20,3 +20,5 @@ jobs:
 
       - name: Cypress run
         uses: cypress-io/github-action@v6
+        with:
+          working-directory: /frontend
