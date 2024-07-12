@@ -1,5 +1,5 @@
 {
-  "include": ["**/*.ts"],
+  "include": ["**/*.ts", "cypress/support/commands.ts"],
   "references": [
     {
       "path": "./tsconfig.node.json"
