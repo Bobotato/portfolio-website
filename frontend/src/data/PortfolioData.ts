@@ -16,12 +16,12 @@ const portfolioData: PortfolioItem[] = [
     ]
   },
   {
-    title: 'SpendTrack',
-    desc: 'This full-stack project was built in less than 2 days as a stress test to challenge my ability to work within tight deadlines.',
-    imgSrc: 'assets/pictures/SpendTrackLogo.png',
-    imgSrcDark: 'assets/pictures/SpendTrackLogo.png',
-    stack: ['Vue', 'Typescript', 'SQLAlchemy', 'Postgresql'],
-    github: 'https://github.com/Bobotato/spendtrack'
+    title: 'SpendSplit',
+    desc: 'This project was built using Next.JS, React and MaterialUI to expand my knowledge to the MERN ecosystem. It is a full-stack web application with a login and registration system, and a dashboard that allows users to track and split their group expenses.',
+    imgSrc: 'assets/pictures/SpendSplitLogo.png',
+    imgSrcDark: 'assets/pictures/SpendSplitLogo.png',
+    stack: ['React', 'Next.js', 'Typescript', 'MaterialUI'],
+    github: 'https://github.com/Bobotato/spendsplit'
   },
   {
     title: 'Overlord',
@@ -50,6 +50,14 @@ const portfolioData: PortfolioItem[] = [
       '• Automated Docker image updating, cloud provisioning and app deployment to a DigitalOcean droplet using Docker, Terraform, Ansible, Github Actions and DigitalOcean',
       '• Ensured continued website functionality and component functionality using Cypress E2E and component testing'
     ]
+  },
+  {
+    title: 'SpendTrack',
+    desc: 'This full-stack project was built in less than 2 days as a stress test to challenge my ability to work within tight deadlines.',
+    imgSrc: 'assets/pictures/SpendTrackLogo.png',
+    imgSrcDark: 'assets/pictures/SpendTrackLogo.png',
+    stack: ['Vue', 'Typescript', 'SQLAlchemy', 'Postgresql'],
+    github: 'https://github.com/Bobotato/spendtrack'
   },
   {
     title: 'Weather Forecasting',
