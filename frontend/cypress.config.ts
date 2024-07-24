@@ -5,10 +5,12 @@ export default defineConfig({
     devServer: {
       framework: 'vue',
       bundler: 'vite'
-    }
+    },
+    chromeWebSecurity: false,
+    defaultCommandTimeout: 10000
   },
 
   e2e: {
-    baseUrl: 'https://alexdb.me'
+    baseUrl: 'http://localhost:4173'
   }
 })

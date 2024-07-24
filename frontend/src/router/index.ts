@@ -20,8 +20,8 @@ export const router = createRouter({
       component: () => import('../views/ProjectsView.vue')
     },
     {
-      path: '/work-experience',
-      name: 'workexperience',
+      path: '/experience',
+      name: 'experience',
       component: () => import('../views/ExperienceView.vue')
     },
     {
