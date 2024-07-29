@@ -8,7 +8,7 @@ context('DarkMode', () => {
       })
     cy.pressDarkModeButton()
     cy.get('div[id="app"').within(() => {
-      cy.get('div').should('have.css', 'background-color').and('eq', 'rgb(24, 24, 27)')
+      cy.get('div').should('have.css', 'background-color').and('eq', 'rgb(10, 10, 10)')
     })
   })
   it('Darkmode works from about', () => {
@@ -18,7 +18,7 @@ context('DarkMode', () => {
       })
     cy.pressDarkModeButton()
     cy.get('div[id="app"').within(() => {
-      cy.get('div').should('have.css', 'background-color').and('eq', 'rgb(24, 24, 27)')
+      cy.get('div').should('have.css', 'background-color').and('eq', 'rgb(10, 10, 10)')
     })
   })
   it('Darkmode works from projects', () => {
@@ -28,7 +28,7 @@ context('DarkMode', () => {
       })
     cy.pressDarkModeButton()
     cy.get('div[id="app"').within(() => {
-      cy.get('div').should('have.css', 'background-color').and('eq', 'rgb(24, 24, 27)')
+      cy.get('div').should('have.css', 'background-color').and('eq', 'rgb(10, 10, 10)')
     })
   })
   it('Darkmode works from experience', () => {
@@ -38,7 +38,7 @@ context('DarkMode', () => {
       })
     cy.pressDarkModeButton()
     cy.get('div[id="app"').within(() => {
-      cy.get('div').should('have.css', 'background-color').and('eq', 'rgb(24, 24, 27)')
+      cy.get('div').should('have.css', 'background-color').and('eq', 'rgb(10, 10, 10)')
     })
   })
   it('Darkmode works from 404', () => {
@@ -48,7 +48,7 @@ context('DarkMode', () => {
       })
     cy.pressDarkModeButton()
     cy.get('div[id="app"').within(() => {
-      cy.get('div').should('have.css', 'background-color').and('eq', 'rgb(24, 24, 27)')
+      cy.get('div').should('have.css', 'background-color').and('eq', 'rgb(10, 10, 10)')
     })
   })
 })
@@ -62,7 +62,7 @@ context('DarkMode Persists', () => {
     cy.pressDarkModeButton()
     cy.visit('/about')
     cy.get('div[id="app"').within(() => {
-      cy.get('div').should('have.css', 'background-color').and('eq', 'rgb(24, 24, 27)')
+      cy.get('div').should('have.css', 'background-color').and('eq', 'rgb(10, 10, 10)')
     })
   })
 })
