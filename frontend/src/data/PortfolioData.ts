@@ -56,6 +56,7 @@ const portfolioData: PortfolioItem[] = [
       '• Live portfolio website with animated interactive 2D & 3D elements created with ThreeJS, Adobe CC, Tailwind and CSS',
       '• Implemented stateful, toggleable dark mode and corresponding theme-responsive elements for a high quality UX',
       '• Automated Docker image updating, cloud provisioning and app deployment to a DigitalOcean droplet using Docker, Terraform, Ansible, Github Actions and DigitalOcean',
+      '• Utilised Google Lighthouse to optimise websites to near-perfect scores for performance, accessibilty and SEO',
       '• Ensured continued website functionality and component functionality using Cypress E2E and component testing'
     ]
   },
