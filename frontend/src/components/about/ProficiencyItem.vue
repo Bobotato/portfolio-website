@@ -19,7 +19,7 @@ const props = defineProps<Props>()
     target="_blank"
     class="flex flex-col place-items-center justify-center transform transition duration-200 hover:scale-110"
   >
-    <img :src="isDark && props.proficencyItem.imgSrcDark ? props.proficencyItem.imgSrcDark : props.proficencyItem.imgSrc" class="object-contain h-16 w-16 lg:h-20 lg:w-20" />
+    <img :src="isDark && props.proficencyItem.imgSrcDark ? props.proficencyItem.imgSrcDark : props.proficencyItem.imgSrc" class="object-contain h-16 w-16 lg:h-20 lg:w-20" :alt="props.proficencyItem.alt"/>
     <p>{{ props.proficencyItem.name }}</p>
   </a>
 </template>

@@ -3,6 +3,7 @@ interface ProficiencyItem {
     imgSrc: string
     imgSrcDark?: string
     link?: string
+    alt?: string
 }
 
 export type { ProficiencyItem }

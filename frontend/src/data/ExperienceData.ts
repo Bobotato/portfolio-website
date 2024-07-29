@@ -16,6 +16,7 @@ const experienceData: ExperienceItem[] = [
     ],
     imgSrc: 'assets/pictures/SmilePepperLogo.png',
     imgSrcDark: 'assets/pictures/SmilePepperLogoDark.png',
+    alt: 'SmilePepper logo',
     link: 'https://smilepepper.com'
   },
   {
@@ -32,6 +33,7 @@ const experienceData: ExperienceItem[] = [
     ],
     imgSrc: 'assets/pictures/FoodaliciousConceptsLogo.png',
     imgSrcDark: 'assets/pictures/FoodaliciousConceptsLogo.png',
+    alt: 'Foodalicious Concepts logo',
     link: 'https://chunkylobsters.com'
   },
   {
@@ -40,7 +42,8 @@ const experienceData: ExperienceItem[] = [
     shortdesc:
       'While learning to become a full stack developer, I designed and built websites and small applications for friends, family and referrals. These helped with the soft skills involved with negotiating and working with clients, and exposed me to the rigours of working with actual clients to achieve their business needs within a deadline.',
     imgSrc: 'assets/pictures/ZhangTuitionLogo.png',
-    imgSrcDark: 'assets/pictures/ZhangTuitionLogoDark.png'
+    imgSrcDark: 'assets/pictures/ZhangTuitionLogoDark.png',
+    alt: 'Freelance experience logo'
   }
 ]
 
