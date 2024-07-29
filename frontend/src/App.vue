@@ -1,5 +1,11 @@
 <script setup lang="ts">
 import { RouterView } from 'vue-router'
+import { useSeoMeta } from 'unhead'
+
+useSeoMeta({
+  title: "Alexander's Portfolio",
+  description: "Alexander's portfolio website"
+})
 </script>
 
 <template>
