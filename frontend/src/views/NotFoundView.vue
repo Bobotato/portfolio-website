@@ -15,6 +15,6 @@ import Footer from '@/components/utils/footer/Footer.vue'
     <RouterLink to="/" class="-mt-24 z-10 hover:text-green-700 dark:text-white">
       Press here to go back home.</RouterLink
     >
-    <Footer></Footer>
+    <Footer class="mt-24"></Footer>
   </div>
 </template>

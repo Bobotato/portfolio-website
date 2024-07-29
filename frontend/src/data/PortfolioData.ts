@@ -21,7 +21,11 @@ const portfolioData: PortfolioItem[] = [
     imgSrc: 'assets/pictures/SpendSplitLogo.png',
     imgSrcDark: 'assets/pictures/SpendSplitLogo.png',
     stack: ['React', 'Next.js', 'Typescript', 'MaterialUI'],
-    github: 'https://github.com/Bobotato/spendsplit'
+    github: 'https://github.com/Bobotato/spendsplit',
+    features: [
+      '• Live webapp built with React and NextJS to help people track and split their group spending',
+      '• Automated end to end testing CI using Github Actions and Cypress'
+    ]
   },
   {
     title: 'Overlord',

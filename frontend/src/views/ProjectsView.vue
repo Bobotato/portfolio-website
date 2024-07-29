@@ -18,6 +18,6 @@ const lgAndSmaller = breakpoints.smallerOrEqual('lg')
     <NavBar v-if="lgAndLarger" :nav-items="NavItems"></NavBar>
     <NavBarMobile v-if="lgAndSmaller" :nav-items="NavItems"></NavBarMobile>
     <ProjectsPage></ProjectsPage>
-    <Footer></Footer>
+    <Footer class="mt-24"></Footer>
   </div>
 </template>

@@ -17,11 +17,6 @@ const languageItems: ProficiencyItem[] = [
     link: 'https://www.typescriptlang.org/'
   },
   {
-    name: 'Tailwind',
-    imgSrc: '/assets/fullColourIcons/TailwindIcon.png',
-    link: '/assets/fullColourIcons/TailwindIcon.png'
-  },
-  {
     name: 'Vue',
     imgSrc: '/assets/fullColourIcons/VueIcon.svg',
     link: 'https://vuejs.org/'
@@ -36,34 +31,50 @@ const languageItems: ProficiencyItem[] = [
     imgSrc: '/assets/fullColourIcons/NextIcon.svg',
     imgSrcDark: '/assets/fullColourIcons/NextIconDark.svg',
     link: 'https://nextjs.org/'
+  },
+  {
+    name: 'Node.js',
+    imgSrc: '/assets/fullColourIcons/NodeIcon.svg',
+    link: 'https://nodejs.org/en'
+  },
+  {
+    name: 'Tailwind',
+    imgSrc: '/assets/fullColourIcons/TailwindIcon.png',
+    link: 'https://tailwindcss.com/'
+  },
+  {
+    name: 'MUI',
+    imgSrc: '/assets/fullColourIcons/MUIIcon.svg',
+    link: 'https://mui.com/'
+  },
+  {
+    name: 'ThreeJS',
+    imgSrc: '/assets/fullColourIcons/ThreeJSIcon.svg',
+    imgSrcDark: '/assets/fullColourIcons/ThreeJSIconDark.svg',
+    link: 'https://threejs.org/'
   }
 ]
 
 const technologyItems: ProficiencyItem[] = [
-    {
-      name: 'AWS',
-      imgSrc: '/assets/fullColourIcons/awsIcon.svg',
-      link: 'https://aws.amazon.com/'
-    },
-    {
-      name: 'DigitalOcean',
-      imgSrc: '/assets/fullColourIcons/DOIcon.png',
-      link: 'https://www.digitalocean.com/'
-    },
-    {
-      name: 'Adobe CC',
-      imgSrc: '/assets/fullColourIcons/AdobeCCIcon.png',
-      link: 'https://www.adobe.com/sg/creativecloud.html'
-    },
-  ]
+  {
+    name: 'AWS',
+    imgSrc: '/assets/fullColourIcons/awsIcon.svg',
+    link: 'https://aws.amazon.com/'
+  },
+  {
+    name: 'DigitalOcean',
+    imgSrc: '/assets/fullColourIcons/DOIcon.png',
+    link: 'https://www.digitalocean.com/'
+  },
+  {
+    name: 'Adobe CC',
+    imgSrc: '/assets/fullColourIcons/AdobeCCIcon.png',
+    link: 'https://www.adobe.com/sg/creativecloud.html'
+  }
+]
 
-  const learningItems: ProficiencyItem[] = [
-    {
-      name: 'ThreeJS',
-      imgSrc: "/assets/fullColourIcons/ThreeJSIcon.svg",
-      imgSrcDark: "/assets/fullColourIcons/ThreeJSIconDark.svg",
-      link: 'https://threejs.org/'
-    }
-  ]
+const learningItems: ProficiencyItem[] = [
+  
+]
 
 export { languageItems, technologyItems, learningItems }
