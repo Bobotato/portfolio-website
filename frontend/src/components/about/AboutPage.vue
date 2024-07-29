@@ -7,7 +7,7 @@ import ProficiencyItem from '@/components/about/ProficiencyItem.vue'
   <main id="about-page" class="flex flex-col items-center justify-center">
     <div id="about-content" class="flex flex-col justify-center max-w-xs lg:max-w-3xl">
       <div class="flex flex-col justify-center items-center gap-4 mb-4 lg:mb-0 lg:flex-row">
-        <img src="/assets/pictures/ProfilePicture.jpg" class="rounded-full mt-10 mb-4 w-56 h-56" />
+        <img src="/assets/pictures/ProfilePicture.jpg" alt="Alexander and a tortoise" class="rounded-full mt-10 mb-4 w-56 h-56" />
         <p class="text-center text-xl font-bold dark:text-gray-300 lg:text-left lg:text-3xl">
           That's me (on the right).
         </p>
