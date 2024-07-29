@@ -3,6 +3,7 @@ export interface PortfolioItem {
   desc: string
   imgSrc: string
   imgSrcDark: string
+  alt?: string
   stack: Array<string>
   github?: string
   features?: Array<string>

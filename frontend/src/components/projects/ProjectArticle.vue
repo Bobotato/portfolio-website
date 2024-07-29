@@ -33,7 +33,7 @@ const props = defineProps<Props>()
                     : props.portfolioData.imgSrc
                 "
                 class="max-h-36 lg:max-h-60"
-                alt="project-image"
+                :alt="props.portfolioData.alt"
               />
             </section>
 
