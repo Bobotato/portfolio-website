@@ -4,7 +4,7 @@ import ThemeToggle from '@/components/utils/footer/ThemeToggle.vue'
 </script>
 
 <template>
-  <footer class="flex flex-col justify-center items-center mt-12 p-4 lg:mt-8 lg:p-4">
+  <footer class="flex flex-col justify-center items-center p-4 lg:p-4">
     <hr
       id="divider-footer"
       class="mb-4 w-4/6 border-2 border-slate-800 dark:border-green-900 lg:mb-2"
