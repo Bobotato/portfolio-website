@@ -33,7 +33,7 @@ const props = defineProps<Props>()
                     : props.experienceDetails.imgSrc
                 "
                 class="max-h-36 lg:max-h-60 object-contain"
-                alt="company-image"
+                :alt="props.experienceDetails.alt"
               />
             </section>
 

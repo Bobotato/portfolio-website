@@ -6,5 +6,6 @@ export interface ExperienceItem {
   jobList?: Array<string>
   imgSrc: string
   imgSrcDark: string
+  alt?: string
   link?: string
 }
