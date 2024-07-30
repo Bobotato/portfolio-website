@@ -1,6 +1,9 @@
 <script lang="ts" setup>
 import ContactLinkList from '@/components/utils/footer/ContactLinkList.vue'
 import ThemeToggle from '@/components/utils/footer/ThemeToggle.vue'
+import { useRoute } from 'vue-router'
+
+const route = useRoute()
 </script>
 
 <template>
@@ -29,6 +32,6 @@ import ThemeToggle from '@/components/utils/footer/ThemeToggle.vue'
       <ThemeToggle></ThemeToggle>
     </div>
 
-    <ContactLinkList></ContactLinkList>
+    <ContactLinkList v-if="route.path !== '/'"></ContactLinkList>
   </footer>
 </template>
