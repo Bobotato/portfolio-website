@@ -54,9 +54,9 @@ const portfolioData: PortfolioItem[] = [
     github: 'https://github.com/Bobotato/portfolio-website',
     features: [
       '• Live portfolio website with animated interactive 2D & 3D elements created with ThreeJS, Adobe CC, Tailwind and CSS',
-      '• Implemented stateful, toggleable dark mode and corresponding theme-responsive elements for a high quality UX',
+      '• Implemented stateful, toggleable dark mode and corresponding theme-responsive elements',
       '• Automated Docker image updating, cloud provisioning and app deployment to a DigitalOcean droplet using Docker, Terraform, Ansible, Github Actions and DigitalOcean',
-      '• Utilised Google Lighthouse to optimise websites to near-perfect scores for performance, accessibilty and SEO',
+      '• Leveraged Google Lighthouse to reduce JS bundle sizes and page load duration by more than 90%',
       '• Ensured continued website functionality and component functionality using Cypress E2E and component testing'
     ]
   },
