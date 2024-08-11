@@ -6,6 +6,6 @@ import Footer from '@/components/utils/footer/Footer.vue'
 <template>
   <div class="flex flex-col lg:h-screen">
     <LandingPage></LandingPage>
-    <Footer></Footer>
+    <Footer class="mt-12 lg:mt-0"></Footer>
   </div>
 </template>

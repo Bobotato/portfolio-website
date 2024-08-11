@@ -83,11 +83,27 @@ const technologyItems: ProficiencyItem[] = [
     imgSrc: '/assets/fullColourIcons/AdobeCCIcon.png',
     link: 'https://www.adobe.com/sg/creativecloud.html',
     alt: 'Adobe Creative Suite Logo'
+  },
+  {
+    name: 'Docker',
+    imgSrc: '/assets/fullColourIcons/DockerIcon.svg',
+    link: 'https://www.docker.com/',
+    alt: 'Docker Logo'
+  },
+  {
+    name: 'Ansible',
+    imgSrc: '/assets/fullColourIcons/AnsibleIcon.svg',
+    link: 'https://www.ansible.com/',
+    alt: 'Ansible Logo'
+  },
+  {
+    name: 'Terraform',
+    imgSrc: '/assets/fullColourIcons/TerraformIcon.svg',
+    link: 'https://www.terraform.io/',
+    alt: 'Terraform Logo'
   }
 ]
 
-const learningItems: ProficiencyItem[] = [
-  
-]
+const learningItems: ProficiencyItem[] = []
 
 export { languageItems, technologyItems, learningItems }

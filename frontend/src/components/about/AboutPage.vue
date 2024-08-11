@@ -6,19 +6,23 @@ import ProficiencyItem from '@/components/about/ProficiencyItem.vue'
 <template>
   <main id="about-page" class="flex flex-col items-center justify-center">
     <div id="about-content" class="flex flex-col justify-center max-w-xs lg:max-w-3xl">
-      <div class="flex flex-col justify-center items-center gap-4 mb-4 lg:mb-0 lg:flex-row">
-        <img src="/assets/pictures/ProfilePicture.jpg" alt="Alexander and a tortoise" class="rounded-full mt-10 mb-4 w-56 h-56" />
-        <p class="text-center text-xl font-bold dark:text-gray-300 lg:text-left lg:text-3xl">
-          That's me (on the right).
+      <div class="flex flex-col justify-center items-center mt-10">
+        <img
+          src="/assets/pictures/ProfilePicture.jpg"
+          alt="Alexander and a tortoise"
+          class="rounded-full w-56 h-56"
+        />
+        <p class="text-center text-2xl font-bold my-8 lg:text-3xl dark:text-gray-300">
+          I'm Alex! That's me (on the right).
         </p>
       </div>
 
       <div class="flex flex-col gap-12">
         <div
-          id="about-me"
+          id="about-me-section"
           class="flex flex-col justify-center mt-8 gap-4 text-lg lg:gap-8 lg:text-base dark:text-gray-300"
         >
-          <p class="text-left text-2xl font-bold lg:text-3xl">I'm Alex!</p>
+          <h1 class="font-bold text-2xl lg:text-3xl">About Me</h1>
           <p class="text-left text-sm font-light lg:text-lg">
             I'm 29 this year and I'm a full-stack, self-taught software engineer who enjoys building
             performant and visually appealing products. <br /><br />
@@ -35,7 +39,7 @@ import ProficiencyItem from '@/components/about/ProficiencyItem.vue'
           </p>
         </div>
 
-        <div id="proficiencies" class="flex flex-col gap-12 font-light">
+        <div id="proficiencies-section" class="flex flex-col gap-12 font-light">
           <section id="languages-frameworks" class="dark:text-gray-300">
             <h1 class="font-bold text-2xl mb-5 lg:text-3xl">Languages & Frameworks</h1>
 

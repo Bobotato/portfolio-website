@@ -7,13 +7,15 @@ const portfolioData: PortfolioItem[] = [
     imgSrc: 'assets/pictures/HiloLogo.png',
     imgSrcDark: 'assets/pictures/HiloLogo.png',
     alt: 'Hilo game logo',
-    stack: ['Python', 'Typescript', 'Vue', 'SQLAlchemy', 'Postgresql'],
+    stack: ['Python', 'Typescript', 'Vue', 'SQLAlchemy', 'FastAPI', 'Postgresql'],
     github: 'https://github.com/Bobotato/game-hilo',
     features: [
-      '• Production-ready game app with user authentication, persistent game scores, and custom audio and graphics, deployed with SSL protection',
-      '• Ensured continued function of backend processes during development by implementing unit and integration testing using Pytest',
-      '• Developed CICD pipeline to automate code quality checking and test coverage using pre-commit hooks, Github Actions and CodeCov',
-      '• Automated Docker image updating, cloud provisioning and app deployment to an AWS EC2 instance using Docker'
+      '• Production-ready Hilo game application built with Vue3, Python and PostgreSQL',
+      '• Data fetching handled using Axios and parsed with Zod for request and response integrity',
+      '• User authentication and registration system built with BCrypt for password salting and hashing',
+      '• Backend API built with FastAPI for speed and SQLAlchemy ORM for models and input sanitisation',
+      '• Unit, integration and code quality testing of backend automated into CI flow using Pytest, Pre-Commit, CodeCov and Github Actions',
+      '• Automated cloud service provisioning and deployment and health check using Terraform, Ansible, Docker and AWS',
     ]
   },
   {
@@ -54,9 +56,9 @@ const portfolioData: PortfolioItem[] = [
     github: 'https://github.com/Bobotato/portfolio-website',
     features: [
       '• Live portfolio website with animated interactive 2D & 3D elements created with ThreeJS, Adobe CC, Tailwind and CSS',
-      '• Implemented stateful, toggleable dark mode and corresponding theme-responsive elements for a high quality UX',
+      '• Implemented stateful, toggleable dark mode and corresponding theme-responsive elements',
       '• Automated Docker image updating, cloud provisioning and app deployment to a DigitalOcean droplet using Docker, Terraform, Ansible, Github Actions and DigitalOcean',
-      '• Utilised Google Lighthouse to optimise websites to near-perfect scores for performance, accessibilty and SEO',
+      '• Leveraged Google Lighthouse to reduce JS bundle sizes and page load duration by more than 90%',
       '• Ensured continued website functionality and component functionality using Cypress E2E and component testing'
     ]
   },
