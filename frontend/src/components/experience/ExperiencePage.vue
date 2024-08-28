@@ -7,7 +7,7 @@ import { experienceData } from '@/data/ExperienceData'
 <template>
   <main class="flex flex-col mx-auto items-center gap-6 px-4 lg:max-w-4xl">
     <section id="resume-link-button">
-      <a target="_blank" rel="noreferrer noopener">
+      <a href="assets/files/Alexander_Bhojwani_Resume.pdf" target="_blank" rel="noreferrer noopener">
         <button
           class="bg-slate-800 dark:bg-green-900 w-60 h-12 rounded-lg mt-10 hover:bg-slate-700 hover:dark:bg-green-800 lg:w-64 lg:h-16"
         >

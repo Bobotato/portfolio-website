@@ -8,12 +8,12 @@ import ProficiencyItem from '@/components/about/ProficiencyItem.vue'
     <div id="about-content" class="flex flex-col justify-center max-w-xs lg:max-w-3xl">
       <div class="flex flex-col justify-center items-center mt-10">
         <img
-          src="/assets/pictures/ProfilePicture.jpg"
+          src="/assets/pictures/ProfilePicture.png"
           alt="Alexander and a tortoise"
           class="rounded-full w-56 h-56"
         />
         <p class="text-center text-2xl font-bold my-8 lg:text-3xl dark:text-gray-300">
-          I'm Alex! That's me (on the right).
+          This is me ^.
         </p>
       </div>
 

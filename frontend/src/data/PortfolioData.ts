@@ -24,7 +24,7 @@ const portfolioData: PortfolioItem[] = [
     imgSrc: 'assets/pictures/SpendSplitLogo.png',
     imgSrcDark: 'assets/pictures/SpendSplitLogo.png',
     alt: 'SpendSplit app logo',
-    stack: ['React', 'Next.js', 'Typescript', 'MaterialUI'],
+    stack: ['React', 'Next.js', 'Typescript', 'MaterialUI', 'Prisma', 'Postgresql'],
     github: 'https://github.com/Bobotato/spendsplit',
     features: [
       '• Live webapp built with React and NextJS to help people track and split their group spending',
