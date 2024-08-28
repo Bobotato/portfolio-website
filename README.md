@@ -15,3 +15,9 @@ My name is Alexander Bhojwani, I'm 29 this year and I'm a full-stack software en
 I graduated from Singapore Management University with a BSc of Economics (hons) and I am currently working in a startup called SmilePepper as a junior SWE (among other roles).
 
 I also have a strong background as a creative, with many years of corporate design work under my sleeve.
+
+## Stack
+
+- [Vue3](https://vuejs.org/)
+- [Typescript](https://typescriptlang.org/)
+- [TailwindCSS](https://tailwindcss.com/) 
