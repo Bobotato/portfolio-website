@@ -20,11 +20,12 @@ const props = defineProps<Props>()
   >
     <Accordion>
       <template #accordionHeader="{ toggle, expanded }">
-        <div @click="toggle()">
-          <div class="flex flex-col gap-2 items-center justify-center lg:grid lg:grid-cols-2">
+        <div @click="toggle()" class="flex flex-col gap-10">
+          <div
+            class="exp-header flex flex-col gap-8 lg:gap-2 items-center justify-center lg:flex-row"
+          >
             <section
-              id="company-image"
-              class="flex items-center justify-center max-w-sm p-4 lg:mb-12"
+              class="company-image flex items-center justify-center mt-8 lg:mt-0 lg:w-1/3 lg:mb-12"
             >
               <img
                 :src="
@@ -32,12 +33,12 @@ const props = defineProps<Props>()
                     ? props.experienceDetails.imgSrcDark
                     : props.experienceDetails.imgSrc
                 "
-                class="max-h-36 lg:max-h-60 object-contain"
+                class="object-contain h-48"
                 :alt="props.experienceDetails.alt"
               />
             </section>
 
-            <section class="flex flex-col px-4 lg:px-8">
+            <section class="exp-header-text flex flex-col px-4 lg:w-2/3 lg:px-8">
               <div class="flex flex-col gap-4">
                 <h1 id="experience-title" class="text-3xl text-left font-bold">
                   {{ props.experienceDetails.title }}
@@ -60,36 +61,50 @@ const props = defineProps<Props>()
                   :href="props.experienceDetails.link"
                   target="_blank"
                   ><p class="text-lg font-medium lg:text-base hover:text-green-700">
-                    Visit {{ props.experienceDetails.title }}
+                    Visit {{ props.experienceDetails.title }} >
                   </p></a
                 >
               </div>
             </section>
+          </div>
 
-            <div
-              v-if="props.experienceDetails.jobList"
-              class="transition-transform duration-300 flex w-5 h-5 mt-4 mb-2"
-              :class="{ 'rotate-180': expanded }"
-            >
-              <img src="/assets/fullColourIcons/ArrowDownIcon.svg" alt="toggle" />
-            </div>
+          <div
+            v-if="props.experienceDetails.jobList"
+            class="transition-transform duration-300 flex items-center justify-center h-5"
+            :class="{ 'rotate-180': expanded }"
+          >
+            <img src="/assets/fullColourIcons/ArrowDownIcon.svg" alt="toggle" />
           </div>
         </div>
       </template>
 
-      <template #accordionContent>
-        <div
-          v-if="props.experienceDetails.jobList"
-          class="stack flex flex-col gap-6 mt-6 flex-wrap px-4 lg:px-8 lg:mb-4"
-        >
-          <ul
-            v-for="job in props.experienceDetails.jobList"
-            :key="job"
-            class="text-sm text-left font-light lg:text-base"
-          >
-            <li class="font-light">{{ job }}</li>
-          </ul>
-        </div>
+      <template #accordionContent="{ toggle }">
+        <section class="exp-content flex flex-col mt-6 gap-6 px-4" @click="toggle()" v-if="props.experienceDetails.jobList">
+          <div class="flex flex-col" >
+            <div>What I did:</div>
+            <div class="stack flex flex-col gap-4 lg:gap-6 mt-4 lg:mt-6 flex-wrap lg:mb-4">
+              <ul
+                v-for="job in props.experienceDetails.jobList"
+                :key="job"
+                class="text-sm text-left font-light lg:text-base"
+              >
+                <li class="font-light">{{ job }}</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="flex flex-col" v-if="props.experienceDetails.previewImg">
+            <div>Quick Preview:</div>
+            <div
+              class="flex items-start justify-center mt-6 h-[400px] lg:h-[600px] overflow-y-scroll"
+            >
+              <img
+                class="rounded-lg border border-opacity-20 w-11/12"
+                :src="props.experienceDetails.previewImg"
+              />
+            </div>
+          </div>
+        </section>
       </template>
     </Accordion>
   </div>
