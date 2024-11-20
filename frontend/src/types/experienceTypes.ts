@@ -8,4 +8,5 @@ export interface ExperienceItem {
   imgSrcDark: string
   alt?: string
   link?: string
+  previewImg?: string
 }

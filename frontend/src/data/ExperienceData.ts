@@ -17,7 +17,8 @@ const experienceData: ExperienceItem[] = [
     imgSrc: 'assets/pictures/SmilePepperLogo.png',
     imgSrcDark: 'assets/pictures/SmilePepperLogoDark.png',
     alt: 'SmilePepper logo',
-    link: 'https://smilepepper.com'
+    link: 'https://smilepepper.com',
+    previewImg: 'assets/pictures/SPWebsite.png'
   },
   {
     title: 'Foodalicious Concepts',
@@ -34,7 +35,8 @@ const experienceData: ExperienceItem[] = [
     imgSrc: 'assets/pictures/FoodaliciousConceptsLogo.png',
     imgSrcDark: 'assets/pictures/FoodaliciousConceptsLogo.png',
     alt: 'Foodalicious Concepts logo',
-    link: 'https://chunkylobsters.com'
+    link: 'https://chunkylobsters.com',
+    previewImg: 'assets/pictures/CLWebsite.png'
   },
   {
     title: 'Freelance Work',
