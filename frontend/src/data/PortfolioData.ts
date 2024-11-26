@@ -4,8 +4,8 @@ const portfolioData: PortfolioItem[] = [
   {
     title: 'Hilo',
     desc: 'This project was built to encompass all my knowledge of frontend and backend to create a full-stack application. It is a simple game with a login and account system, custom assets for the frontend, a backend that handles some computation and a database to store player data.',
-    imgSrc: 'assets/pictures/HiloLogo.png',
-    imgSrcDark: 'assets/pictures/HiloLogo.png',
+    imgSrc: 'assets/pictures/logos/HiloLogo.png',
+    imgSrcDark: 'assets/pictures/logos/HiloLogo.png',
     alt: 'Hilo game logo',
     stack: ['Python', 'Typescript', 'Vue', 'SQLAlchemy', 'FastAPI', 'Postgresql'],
     github: 'https://github.com/Bobotato/game-hilo',
@@ -21,8 +21,8 @@ const portfolioData: PortfolioItem[] = [
   {
     title: 'SpendSplit',
     desc: 'This project was built using Next.JS, React and MaterialUI to expand my knowledge to the MERN ecosystem. It is a full-stack web application with a login and registration system, and a dashboard that allows users to track and split their group expenses.',
-    imgSrc: 'assets/pictures/SpendSplitLogo.png',
-    imgSrcDark: 'assets/pictures/SpendSplitLogo.png',
+    imgSrc: 'assets/pictures/logos/SpendSplitLogo.png',
+    imgSrcDark: 'assets/pictures/logos/SpendSplitLogo.png',
     alt: 'SpendSplit app logo',
     stack: ['React', 'Next.js', 'Typescript', 'MaterialUI', 'Prisma', 'Postgresql'],
     github: 'https://github.com/Bobotato/spendsplit',
@@ -34,8 +34,8 @@ const portfolioData: PortfolioItem[] = [
   {
     title: 'Overlord',
     desc: 'This full-stack project was built to learn how to use AI and prompt engineering to offload some daily management and planning tasks, improving my efficiency. It uses the ChatGPT-3.5-Turbo API to filter and prioritise my daily tasks by relevance and importance towards a predefined monthly goal.',
-    imgSrc: 'assets/pictures/OverlordLogo.png',
-    imgSrcDark: 'assets/pictures/OverlordLogoDark.png',
+    imgSrc: 'assets/pictures/logos/OverlordLogo.png',
+    imgSrcDark: 'assets/pictures/logos/OverlordLogoDark.png',
     alt: 'Overlord app logo',
     stack: ['Tailwind', 'Vue', 'Python', 'OpenAI', 'Typescript'],
     github: 'https://github.com/Bobotato/overlord-be',
@@ -49,10 +49,10 @@ const portfolioData: PortfolioItem[] = [
   {
     title: 'Portfolio Website',
     desc: 'This very website was built as a way of testing myself to produce a polished, responsive and user-friendly website with an inclusion of an unfamiliar niche framework (ThreeJS). I also used the opportunity to create a CICD pipeline that would automate the update of the remote host, so that I would only have to worry about building the website content.',
-    imgSrc: 'assets/pictures/PortfolioLogo.png',
-    imgSrcDark: 'assets/pictures/PortfolioLogoDark.png',
+    imgSrc: 'assets/pictures/logos/PortfolioLogo.png',
+    imgSrcDark: 'assets/pictures/logos/PortfolioLogoDark.png',
     alt: 'Portfolio website logo',
-    stack: ['Tailwind', 'Vue', 'ThreeJS', 'Typescript'],
+    stack: ['Tailwind', 'Vue', 'ThreeJS', 'Primevue', 'Typescript'],
     github: 'https://github.com/Bobotato/portfolio-website',
     features: [
       '• Live portfolio website with animated interactive 2D & 3D elements created with ThreeJS, Adobe CC, Tailwind and CSS',
@@ -65,8 +65,8 @@ const portfolioData: PortfolioItem[] = [
   {
     title: 'SpendTrack',
     desc: 'This full-stack project was built in less than 2 days as a stress test to challenge my ability to work within tight deadlines.',
-    imgSrc: 'assets/pictures/SpendTrackLogo.png',
-    imgSrcDark: 'assets/pictures/SpendTrackLogo.png',
+    imgSrc: 'assets/pictures/logos/SpendTrackLogo.png',
+    imgSrcDark: 'assets/pictures/logos/SpendTrackLogo.png',
     alt: 'Spendtrack app logo',
     stack: ['Vue', 'Typescript', 'SQLAlchemy', 'Postgresql'],
     github: 'https://github.com/Bobotato/spendtrack'
@@ -74,8 +74,8 @@ const portfolioData: PortfolioItem[] = [
   {
     title: 'Weather Forecasting',
     desc: 'This project was built to learn about promises, APIs and fetching resources, specifically revolving around the Fetch API and async/await.',
-    imgSrc: 'assets/pictures/3DWeatherLogo.png',
-    imgSrcDark: 'assets/pictures/3DWeatherLogoDark.png',
+    imgSrc: 'assets/pictures/logos/3DWeatherLogo.png',
+    imgSrcDark: 'assets/pictures/logos/3DWeatherLogoDark.png',
     alt: 'Weather forecast app logo',
     stack: ['Tailwind', 'Vue', 'Typescript', 'SQL', 'Python'],
     github: 'https://github.com/Bobotato/weather-app-vue-edition'

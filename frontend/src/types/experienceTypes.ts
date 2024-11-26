@@ -1,3 +1,5 @@
+import type { GalleriaItem } from "@/types/galleriaTypes"
+
 export interface ExperienceItem {
   title: string
   position?: string
@@ -9,4 +11,5 @@ export interface ExperienceItem {
   alt?: string
   link?: string
   previewImg?: string
+  galleria?: GalleriaItem[]
 }
