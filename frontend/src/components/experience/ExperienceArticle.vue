@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { useDark } from '@vueuse/core'
 import Accordion from '@/components/utils/Accordion.vue'
+import ImageGalleria from '@/components/utils/ImageGalleria.vue'
 
 import type { WritableComputedRef } from 'vue'
 import type { ExperienceItem } from '@/types/experienceTypes'
@@ -60,7 +61,7 @@ const props = defineProps<Props>()
                   v-if="props.experienceDetails.link"
                   :href="props.experienceDetails.link"
                   target="_blank"
-                  ><p class="text-lg font-medium lg:text-base hover:text-green-700">
+                  ><p class="text-lg font-medium lg:text-base hover:text-green-600">
                     Visit {{ props.experienceDetails.title }} >
                   </p></a
                 >
@@ -69,7 +70,7 @@ const props = defineProps<Props>()
           </div>
 
           <div
-            v-if="props.experienceDetails.jobList"
+            v-if="props.experienceDetails.jobList && !expanded"
             class="transition-transform duration-300 flex items-center justify-center h-5"
             :class="{ 'rotate-180': expanded }"
           >
@@ -78,9 +79,12 @@ const props = defineProps<Props>()
         </div>
       </template>
 
-      <template #accordionContent="{ toggle }">
-        <section class="exp-content flex flex-col mt-6 gap-6 px-4" @click="toggle()" v-if="props.experienceDetails.jobList">
-          <div class="flex flex-col" >
+      <template #accordionContent="{ toggle, expanded }">
+        <section
+          class="exp-content flex flex-col mt-6 gap-6 px-4"
+          v-if="props.experienceDetails.jobList"
+        >
+          <div class="flex flex-col">
             <div>What I did:</div>
             <div class="stack flex flex-col gap-4 lg:gap-6 mt-4 lg:mt-6 flex-wrap lg:mb-4">
               <ul
@@ -93,18 +97,26 @@ const props = defineProps<Props>()
             </div>
           </div>
 
-          <div class="flex flex-col" v-if="props.experienceDetails.previewImg">
+          <div class="flex flex-col" v-if="props.experienceDetails.galleria">
             <div>Quick Preview:</div>
-            <div
-              class="flex items-start justify-center mt-6 h-[400px] lg:h-[600px] overflow-y-scroll"
-            >
-              <img
-                class="rounded-lg border border-opacity-20 w-11/12"
-                :src="props.experienceDetails.previewImg"
-              />
+            <div class="flex items-start justify-center mt-6">
+              <ImageGalleria :images="props.experienceDetails.galleria"></ImageGalleria>
             </div>
           </div>
         </section>
+
+        <div
+          v-if="props.experienceDetails.jobList"
+          class="transition-transform duration-300 flex flex-col items-center justify-center h-5 mt-10 gap-2"
+          @click="toggle"
+        >
+          
+          <img
+            src="/assets/fullColourIcons/ArrowDownIcon.svg"
+            :class="{ 'rotate-180': expanded }"
+            alt="toggle"
+          />
+        </div>
       </template>
     </Accordion>
   </div>

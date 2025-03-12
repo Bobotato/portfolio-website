@@ -4,7 +4,7 @@ const experienceData: ExperienceItem[] = [
   {
     title: 'SmilePepper',
     position: 'Full Stack Dev, Marketing, Design',
-    duration: '2022 - 2024',
+    duration: '2022 - 2025',
     shortdesc:
       'As one of the co-founders of SmilePepper, I worked primarily as a junior full-stack dev with a front-end focus, building our product using Vue3 and Node.js. I also did the marketing, graphic design, and collaborated with our UIUX designer to develop the user experience.',
     jobList: [
@@ -14,11 +14,14 @@ const experienceData: ExperienceItem[] = [
       '• Researched and co-implemented payment gateway to accept Singapore exclusive payment methods for monetisation strategy',
       '• Implemented front-end testing using Cypress and integrated automated testing into BitBucket CI pipeline'
     ],
-    imgSrc: 'assets/pictures/SmilePepperLogo.png',
-    imgSrcDark: 'assets/pictures/SmilePepperLogoDark.png',
+    imgSrc: 'assets/pictures/logos/SmilePepperLogo.png',
+    imgSrcDark: 'assets/pictures/logos/SmilePepperLogoDark.png',
     alt: 'SmilePepper logo',
     link: 'https://smilepepper.com',
-    previewImg: 'assets/pictures/SPWebsite.png'
+    previewImg: 'assets/pictures/websitePreviews/SPWebsite.png',
+    galleria: [
+      { itemImageSrc: 'assets/pictures/websiteGalleriaPreviews/chunkyLobsters_1.jpg', alt: 'Test' }
+    ]
   },
   {
     title: 'Foodalicious Concepts',
@@ -32,20 +35,34 @@ const experienceData: ExperienceItem[] = [
       '• Automated regular daily backups of thousands of customer and order data across 3 outlets to AWS S3 using Powershell scripts',
       '• Significantly reduced delivery operations overhead while accomodating hundreds of weekly order volume across 3 outlets, quadrupling daily revenue during COVID crisis without increasing manpower costs with minimal tech expenditure'
     ],
-    imgSrc: 'assets/pictures/FoodaliciousConceptsLogo.png',
-    imgSrcDark: 'assets/pictures/FoodaliciousConceptsLogo.png',
+    imgSrc: 'assets/pictures/logos/FoodaliciousConceptsLogo.png',
+    imgSrcDark: 'assets/pictures/logos/FoodaliciousConceptsLogo.png',
     alt: 'Foodalicious Concepts logo',
     link: 'https://chunkylobsters.com',
-    previewImg: 'assets/pictures/CLWebsite.png'
+    previewImg: 'assets/pictures/websitePreviews/CLWebsite.png',
+    galleria: [
+      {
+        itemImageSrc: 'assets/pictures/websiteGalleriaPreviews/chunkyLobsters_1.jpg',
+        alt: 'The Chunky Lobsters homepage'
+      },
+      {
+        itemImageSrc: 'assets/pictures/websiteGalleriaPreviews/chunkyLobsters_2.jpg',
+        alt: 'The Chunky Lobsters homepage'
+      },
+      {
+        itemImageSrc: 'assets/pictures/websiteGalleriaPreviews/chunkyLobsters_3.jpg',
+        alt: 'The Chunky Lobsters homepage'
+      }
+    ]
   },
   {
     title: 'Freelance Work',
     duration: 'Ongoing',
     shortdesc:
       'While learning to become a full stack developer, I designed and built websites and small applications for friends, family and referrals. These helped with the soft skills involved with negotiating and working with clients, and exposed me to the rigours of working with actual clients to achieve their business needs within a deadline.',
-    imgSrc: 'assets/pictures/ZhangTuitionLogo.png',
-    imgSrcDark: 'assets/pictures/ZhangTuitionLogoDark.png',
-    alt: 'Freelance experience logo'
+    imgSrc: 'assets/pictures/logos/ZhangTuitionLogo.png',
+    imgSrcDark: 'assets/pictures/logos/ZhangTuitionLogoDark.png',
+    alt: 'Zhang Tuition logo'
   }
 ]
 
