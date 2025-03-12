@@ -10,7 +10,7 @@ Or you can just view the live site [here](https://alexdb.me).
 
 ## About Me
 
-My name is Alexander Bhojwani, I'm 29 this year and I'm a full-stack software engineer.
+My name is Alexander Bhojwani, I'm 30 this year and I'm a full-stack software engineer.
 
 I graduated from Singapore Management University with a BSc of Economics (hons) and I am currently working in a startup called SmilePepper as a junior SWE (among other roles).
 
@@ -21,3 +21,9 @@ I also have a strong background as a creative, with many years of corporate desi
 - [Vue3](https://vuejs.org/)
 - [Typescript](https://typescriptlang.org/)
 - [TailwindCSS](https://tailwindcss.com/) 
+
+## CICD
+
+1. Cypress Testing
+2. Docker Images are built and pushed
+3. SSH into droplet and update Docker images
