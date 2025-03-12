@@ -4,7 +4,7 @@ const experienceData: ExperienceItem[] = [
   {
     title: 'SmilePepper',
     position: 'Full Stack Dev, Marketing, Design',
-    duration: '2022 - 2024',
+    duration: '2022 - 2025',
     shortdesc:
       'As one of the co-founders of SmilePepper, I worked primarily as a junior full-stack dev with a front-end focus, building our product using Vue3 and Node.js. I also did the marketing, graphic design, and collaborated with our UIUX designer to develop the user experience.',
     jobList: [
