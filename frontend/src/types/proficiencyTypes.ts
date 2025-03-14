@@ -1,4 +1,5 @@
 interface ProficiencyItem {
+    id: number
     name: string
     imgSrc: string
     imgSrcDark?: string
@@ -7,9 +8,10 @@ interface ProficiencyItem {
 }
 
 interface CertificationItem {
+    id: number
     name: string
+    shortName: string
     imgSrc: string
-    imgSrcDark?: string
     link: string
     alt: string
 }

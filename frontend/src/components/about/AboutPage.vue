@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { languageItems, technologyItems, learningItems, certificationItems } from '@/data/ProficiencyData'
 import ProficiencyItem from '@/components/about/ProficiencyItem.vue'
+import CertificationItem from '@/components/about/CertificationItem.vue';
 </script>
 
 <template>
@@ -46,7 +47,7 @@ import ProficiencyItem from '@/components/about/ProficiencyItem.vue'
             <div
               class="flex flex-row flex-wrap place-items-center gap-x-4 gap-y-4 text-sm mt-8 lg:gap-x-4 lg:text-base lg:gap-y-2"
             >
-              <div v-for="item in languageItems">
+              <div v-for="item in languageItems" :key="item.id">
                 <ProficiencyItem :proficency-item="item"></ProficiencyItem>
               </div>
             </div>
@@ -58,7 +59,7 @@ import ProficiencyItem from '@/components/about/ProficiencyItem.vue'
             <div
               class="flex flex-row flex-wrap place-items-center gap-x-4 gap-y-4 mt-8 lg:gap-x-4 lg:text-base lg:gap-y-2"
             >
-              <div v-for="item in technologyItems">
+              <div v-for="item in technologyItems" :key="item.id">
                 <ProficiencyItem :proficency-item="item"></ProficiencyItem>
               </div>
             </div>
@@ -70,7 +71,7 @@ import ProficiencyItem from '@/components/about/ProficiencyItem.vue'
             <div
               class="flex flex-row flex-wrap place-items-center gap-x-4 gap-y-4 mt-8 lg:gap-x-4 lg:text-base lg:gap-y-2"
             >
-              <div v-for="item in learningItems">
+              <div v-for="item in learningItems" :key="item.id">
                 <ProficiencyItem :proficency-item="item"></ProficiencyItem>
               </div>
             </div>
@@ -82,8 +83,8 @@ import ProficiencyItem from '@/components/about/ProficiencyItem.vue'
             <div
               class="flex flex-row flex-wrap place-items-center gap-x-4 gap-y-4 mt-8 lg:gap-x-4 lg:text-base lg:gap-y-2"
             >
-              <div v-for="item in certificationItems">
-                <ProficiencyItem :proficency-item="item"></ProficiencyItem>
+              <div v-for="item in certificationItems" :key="item.id">
+                <CertificationItem :certification-item="item"></CertificationItem>
               </div>
             </div>
           </section>
