@@ -25,6 +25,11 @@ export const router = createRouter({
       component: () => import('../views/ExperienceView.vue')
     },
     {
+      path: '/design',
+      name: 'design',
+      component: () => import('../views/DesignView.vue')
+    },
+    {
       path: '/:notFound',
       name: 'notfound',
       component: () => import('../views/NotFoundView.vue')
