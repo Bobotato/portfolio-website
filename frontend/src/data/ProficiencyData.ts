@@ -1,4 +1,4 @@
-import type { ProficiencyItem } from '@/types/proficiencyTypes'
+import type { ProficiencyItem, CertificationItem } from '@/types/proficiencyTypes'
 
 const languageItems: ProficiencyItem[] = [
   {
@@ -106,4 +106,21 @@ const technologyItems: ProficiencyItem[] = [
 
 const learningItems: ProficiencyItem[] = []
 
-export { languageItems, technologyItems, learningItems }
+const certificationItems: CertificationItem[] = [
+  {
+    name: 'Tableau Desktop Specialist',
+    imgSrc: '/assets/fullColourIcons/TableauIcon.png',
+    imgSrcDark: '/assets/fullColourIcons/TableauIconDark.png',
+    link: 'https://www.credly.com/badges/58ef54f1-0142-44a4-837d-4f3e54578efa/public_url',
+    alt: 'Tableau Desktop Specialist Certification'
+  },
+  {
+    name: 'AWS Certified Cloud Practitioner',
+    imgSrc: '/assets/fullColourIcons/TableauIcon.png',
+    imgSrcDark: '/assets/fullColourIcons/TableauIconDark.png',
+    link: 'https://www.credly.com/badges/58ef54f1-0142-44a4-837d-4f3e54578efa/public_url',
+    alt: 'Tableau Desktop Specialist Certification'
+  }
+]
+
+export { languageItems, technologyItems, learningItems, certificationItems }

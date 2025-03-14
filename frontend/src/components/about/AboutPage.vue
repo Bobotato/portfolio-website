@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { languageItems, technologyItems, learningItems } from '@/data/ProficiencyData'
+import { languageItems, technologyItems, learningItems, certificationItems } from '@/data/ProficiencyData'
 import ProficiencyItem from '@/components/about/ProficiencyItem.vue'
 </script>
 
@@ -71,6 +71,18 @@ import ProficiencyItem from '@/components/about/ProficiencyItem.vue'
               class="flex flex-row flex-wrap place-items-center gap-x-4 gap-y-4 mt-8 lg:gap-x-4 lg:text-base lg:gap-y-2"
             >
               <div v-for="item in learningItems">
+                <ProficiencyItem :proficency-item="item"></ProficiencyItem>
+              </div>
+            </div>
+          </section>
+
+          <section id="certifications" class="dark:text-gray-300" v-if="certificationItems.length > 0">
+            <h1 class="font-bold text-2xl mb-5 lg:text-3xl">Certifications</h1>
+
+            <div
+              class="flex flex-row flex-wrap place-items-center gap-x-4 gap-y-4 mt-8 lg:gap-x-4 lg:text-base lg:gap-y-2"
+            >
+              <div v-for="item in certificationItems">
                 <ProficiencyItem :proficency-item="item"></ProficiencyItem>
               </div>
             </div>
