@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import ExperiencePage from '@/components/experience/ExperiencePage.vue'
+import DesignPage from '@/components/design/DesignPage.vue'
 import NavBar from '@/components/utils/navbar/NavBar.vue'
 import NavBarMobile from '@/components/utils/navbar/NavBarMobile.vue'
 import Footer from '@/components/utils/footer/Footer.vue'
@@ -17,7 +17,7 @@ const lgAndSmaller = breakpoints.smallerOrEqual('lg')
   <div class="flex flex-col mx-auto items-center w-screen">
     <NavBar v-if="lgAndLarger" :nav-items="NavItems"></NavBar>
     <NavBarMobile v-if="lgAndSmaller" :nav-items="NavItems"></NavBarMobile>
-    <ExperiencePage></ExperiencePage>
+    <DesignPage></DesignPage>
     <Footer class="mt-24"></Footer>
   </div>
 </template>
