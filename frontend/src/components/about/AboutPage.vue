@@ -1,7 +1,16 @@
 <script setup lang="ts">
-import { languageItems, technologyItems, learningItems, certificationItems } from '@/data/ProficiencyData'
+import dayjs from 'dayjs'
+
+import {
+  languageItems,
+  technologyItems,
+  learningItems,
+  certificationItems
+} from '@/data/ProficiencyData'
 import ProficiencyItem from '@/components/about/ProficiencyItem.vue'
-import CertificationItem from '@/components/about/CertificationItem.vue';
+import CertificationItem from '@/components/about/CertificationItem.vue'
+
+const age = parseInt(dayjs().format('YYYY')) - 1994
 </script>
 
 <template>
@@ -25,8 +34,8 @@ import CertificationItem from '@/components/about/CertificationItem.vue';
         >
           <h1 class="font-bold text-2xl lg:text-3xl">About Me</h1>
           <p class="text-left text-sm font-light lg:text-lg">
-            I'm 29 this year and I'm a full-stack, self-taught software engineer who enjoys building
-            performant and visually appealing products. <br /><br />
+            I'm {{ age }} this year and I'm a full-stack, self-taught software engineer who enjoys
+            building performant and visually appealing products. <br /><br />
             I graduated from Singapore Management University with a BSc of Economics (hons) and I am
             currently working in a startup I cofounded called
             <a
@@ -77,7 +86,11 @@ import CertificationItem from '@/components/about/CertificationItem.vue';
             </div>
           </section>
 
-          <section id="certifications" class="dark:text-gray-300" v-if="certificationItems.length > 0">
+          <section
+            id="certifications"
+            class="dark:text-gray-300"
+            v-if="certificationItems.length > 0"
+          >
             <h1 class="font-bold text-2xl mb-5 lg:text-3xl">Certifications</h1>
 
             <div
