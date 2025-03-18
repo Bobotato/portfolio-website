@@ -9,6 +9,7 @@ import {
 } from '@/data/ProficiencyData'
 import ProficiencyItem from '@/components/about/ProficiencyItem.vue'
 import CertificationItem from '@/components/about/CertificationItem.vue'
+import GithubWidget from '@/components/utils/githubActivity/GithubWidget.vue'
 
 const age = parseInt(dayjs().format('YYYY')) - 1994
 </script>
@@ -101,6 +102,23 @@ const age = parseInt(dayjs().format('YYYY')) - 1994
               </div>
             </div>
           </section>
+        </div>
+
+        <div
+          id="github-activity-section"
+          class="flex flex-col justify-center mt-8 gap-4 text-lg lg:gap-8 lg:text-base dark:text-gray-300"
+        >
+          <h1 class="font-bold text-2xl lg:text-3xl">Contribution Activity</h1>
+          <p class="text-left text-sm font-light lg:text-lg">
+            <a
+              href="https://github.com/bobotato"
+              class="hover:text-blue-700 hover:dark:text-green-500"
+              >My Github</a
+            >
+            (My contributions are mostly on Bitbucket at the moment)
+          </p>
+
+          <GithubWidget />
         </div>
       </div>
     </div>
