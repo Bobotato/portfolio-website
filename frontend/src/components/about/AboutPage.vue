@@ -1,5 +1,7 @@
 <script setup lang="ts">
 import dayjs from 'dayjs'
+import { computed } from 'vue'
+import { useWindowSize } from '@vueuse/core'
 
 import {
   languageItems,
@@ -11,7 +13,13 @@ import ProficiencyItem from '@/components/about/ProficiencyItem.vue'
 import CertificationItem from '@/components/about/CertificationItem.vue'
 import GithubWidget from '@/components/utils/githubActivity/GithubWidget.vue'
 
+import type { ComputedRef } from 'vue'
+
 const age = parseInt(dayjs().format('YYYY')) - 1994
+
+const { width } = useWindowSize()
+
+const daysToRender: ComputedRef<number> = computed(() => (width.value < 1024 ? 150 : 365))
 </script>
 
 <template>
@@ -118,13 +126,7 @@ const age = parseInt(dayjs().format('YYYY')) - 1994
             (My contributions are mostly on Bitbucket at the moment)
           </p>
 
-          <Suspense>
-            <GithubWidget />
-
-            <template #fallback>
-              <div>Loading...</div>
-            </template>
-          </Suspense>
+          <GithubWidget :daysToRender="daysToRender" />
         </div>
       </div>
     </div>

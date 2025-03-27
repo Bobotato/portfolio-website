@@ -7,6 +7,12 @@ import ActivityCalendarWidget from 'activity-calendar-widget/vue'
 
 import type { Ref, WritableComputedRef } from 'vue'
 
+interface Props {
+  daysToRender: number
+}
+
+const props = defineProps<Props>()
+
 let { activityData, updateActivityData } = useGithubActivityWidget()
 
 const isDark: WritableComputedRef<boolean> = useDark()
@@ -22,7 +28,7 @@ onMounted(async () => {
 
 <template>
   <ActivityCalendarWidget
-    :daysToRender="365"
+    :daysToRender="props.daysToRender"
     :data="activityData"
     :showSummary="true"
     :levelColorMode="isDark ? 'dark' : 'light'"
