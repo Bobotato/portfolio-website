@@ -10,14 +10,15 @@ let { activityData, updateActivityData } = useGithubActivityWidget()
 
 let isLoading: Ref<boolean> = ref(true)
 
-onMounted(() => {
+onMounted(async () => {
   isLoading.value = true
-  updateActivityData()
+  activityData.value = await updateActivityData()
   isLoading.value = false
 })
 </script>
 
 <template>
-  <ActivityCalendarWidget :daysToRender="365" />
+  {{ activityData }}
+  <ActivityCalendarWidget :daysToRender="365" :data="activityData" />
   <p v-if="isLoading">Is loading...</p>
 </template>
