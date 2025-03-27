@@ -11,6 +11,7 @@ function useToggle(): void {
   isExpanded.value = !isExpanded.value
 }
 </script>
+
 <template>
   <div class="accordion">
     <div class="accordion-header w-full">
