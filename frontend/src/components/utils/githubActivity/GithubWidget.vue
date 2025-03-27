@@ -1,12 +1,15 @@
 <script lang="ts" setup>
 import { ref, onMounted } from 'vue'
 import { useGithubActivityWidget } from '@/composables/githubActivity'
+import { useDark } from '@vueuse/core'
 
 import ActivityCalendarWidget from 'activity-calendar-widget/vue'
 
-import type { Ref } from 'vue'
+import type { Ref, WritableComputedRef } from 'vue'
 
 let { activityData, updateActivityData } = useGithubActivityWidget()
+
+const isDark: WritableComputedRef<boolean> = useDark()
 
 let isLoading: Ref<boolean> = ref(true)
 
@@ -18,6 +21,12 @@ onMounted(async () => {
 </script>
 
 <template>
-  <ActivityCalendarWidget :daysToRender="365" :data="activityData" :showSummary="true" />
+  <ActivityCalendarWidget
+    :daysToRender="365"
+    :data="activityData"
+    :showSummary="true"
+    :levelColorMode="isDark ? 'dark' : 'light'"
+    :showWeekdayLabels="false"
+  />
   <p v-if="isLoading">Is loading...</p>
 </template>
