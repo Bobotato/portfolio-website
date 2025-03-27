@@ -29,9 +29,13 @@ export function useGithubActivityWidget() {
   }
 
   async function updateActivityData(): Promise<GithubActivityData> {
-    const data = await getGithubActivity()
-    const activityData = await data.contributions
-    return transformActivityData(activityData)
+    try {
+      const data = await getGithubActivity()
+      const activityData = await data.contributions
+      return transformActivityData(activityData)
+    } catch (error: any) {
+      throw new Error('Unexpected error occurred while fetching GitHub activity.')
+    }
   }
 
   return { activityData, updateActivityData }

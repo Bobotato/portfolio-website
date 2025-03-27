@@ -14,10 +14,8 @@ async function getGithubActivity(): Promise<GetGithubActivityResponse> {
     return data
   } catch (error: any) {
     if (error instanceof ZodError) {
-      console.log('Zod Error')
       throw new Error('Validation Error')
     } else if (error instanceof AxiosError) {
-      console.log('Axios Error')
       throw new Error('Axios Error')
     } else {
       throw new Error('Unexpected error occurred while fetching GitHub activity')
