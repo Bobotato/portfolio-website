@@ -38,7 +38,6 @@ import Model from '@/components/utils/Model.vue'
           <RouterLink to="/about" class="hover:text-green-700">About</RouterLink>
           <RouterLink to="/projects" class="hover:text-green-700">Projects</RouterLink>
           <RouterLink to="/experience" class="hover:text-green-700">Experience</RouterLink>
-          <RouterLink to="/design" class="hover:text-green-700">Design</RouterLink>
         </nav>
 
         <ul id="contact-menu-landing" class="flex flex-row mt-4 gap-8 items-center">
