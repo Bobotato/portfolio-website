@@ -118,7 +118,13 @@ const age = parseInt(dayjs().format('YYYY')) - 1994
             (My contributions are mostly on Bitbucket at the moment)
           </p>
 
-          <GithubWidget />
+          <Suspense>
+            <GithubWidget />
+
+            <template #fallback>
+              <div>Loading...</div>
+            </template>
+          </Suspense>
         </div>
       </div>
     </div>

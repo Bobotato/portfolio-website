@@ -1,13 +1,23 @@
 <script lang="ts" setup>
-import { ref, Ref, onMounted } from 'vue'
+import { ref, onMounted } from 'vue'
+import { useGithubActivityWidget } from '@/composables/githubActivity'
 
 import ActivityCalendarWidget from 'activity-calendar-widget/vue'
 
-const githubData: Ref<null> = ref(null)
+import type { Ref } from 'vue'
 
+let { activityData, updateActivityData } = useGithubActivityWidget()
 
+let isLoading: Ref<boolean> = ref(true)
+
+onMounted(() => {
+  isLoading.value = true
+  updateActivityData()
+  isLoading.value = false
+})
 </script>
 
 <template>
   <ActivityCalendarWidget :daysToRender="365" />
+  <p v-if="isLoading">Is loading...</p>
 </template>

@@ -1,10 +1,9 @@
 import axios from 'axios'
 
 export const apiClient = axios.create({
-  withCredentials: true,
+  withCredentials: false,
   headers: {
     Accept: 'application/json',
-    'content-type': 'application/json',
-    timeout: 1000
+    'content-type': 'application/json'
   }
 })
