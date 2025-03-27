@@ -16,6 +16,7 @@
     "@unhead/vue": "^1.9.16",
     "@vueuse/core": "^10.11.0",
     "activity-calendar-widget": "^0.0.18",
+    "axios": "^1.8.3",
     "dayjs": "^1.11.13",
     "primevue": "^4.2.3",
     "three": "^0.158.0",
