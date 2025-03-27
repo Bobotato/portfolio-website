@@ -18,7 +18,6 @@ onMounted(async () => {
 </script>
 
 <template>
-  {{ activityData }}
-  <ActivityCalendarWidget :daysToRender="365" :data="activityData" />
+  <ActivityCalendarWidget :daysToRender="365" :data="activityData" :showSummary="true" />
   <p v-if="isLoading">Is loading...</p>
 </template>

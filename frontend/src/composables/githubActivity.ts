@@ -6,21 +6,29 @@ import type { Ref } from 'vue'
 
 import type {
   Contribution,
-  ContributionsData,
-  ContributionsDataTransformed
+  ContributionTransformed,
+  GithubActivityData
 } from '@/types/models/models'
 
 export function useGithubActivityWidget() {
   const activityData: Ref<any> = ref([])
 
-  function transformActivityData(data: Contribution[]): ContributionsDataTransformed {
-    return data.forEach((contribution: Contribution) => {
-      console.log(1)
+  function transformActivityData(contributions: Contribution[]): GithubActivityData {
+    const data: GithubActivityData = []
+    contributions.forEach((contribution: Contribution) => {
+      data.push(transformContribution(contribution))
     })
-    // data.forEach((contribution: Contribution) => console.log(contribution))
+    return data
   }
 
-  async function updateActivityData(): Promise<ContributionsDataTransformed> {
+  function transformContribution(contribution: Contribution): ContributionTransformed {
+    return {
+      date: contribution.date,
+      activities: Array(contribution.count).fill({})
+    }
+  }
+
+  async function updateActivityData(): Promise<GithubActivityData> {
     const data = await getGithubActivity()
     const activityData = await data.contributions
     return transformActivityData(activityData)
