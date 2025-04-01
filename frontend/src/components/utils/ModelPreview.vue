@@ -9,7 +9,7 @@ import {
   REXURL
 } from '@/helpers/model'
 import { Scene } from 'three'
-import LoadingSpinner from '@/components/utils/LoadingSpinner.vue'
+import LoadingSpinner from '@/components/utils/animations/LoadingSpinner.vue'
 
 import type { Ref } from 'vue'
 

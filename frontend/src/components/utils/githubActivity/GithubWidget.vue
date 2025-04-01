@@ -4,7 +4,7 @@ import { useGithubActivityWidget } from '@/composables/githubActivity'
 import { useDark } from '@vueuse/core'
 
 import ActivityCalendarWidget from 'activity-calendar-widget/vue'
-import LoadingSpinner from '@/components/utils/LoadingSpinner.vue'
+import LoadingSpinner from '@/components/utils/animations/LoadingSpinner.vue'
 
 import type { Ref, WritableComputedRef } from 'vue'
 
