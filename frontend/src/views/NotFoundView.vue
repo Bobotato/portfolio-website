@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import { RouterLink } from 'vue-router'
-import WalkingAnim from '@/components/utils/WalkingAnim.vue'
+import WalkingAnim from '@/components/utils/animations/WalkingAnim.vue'
 import Footer from '@/components/utils/footer/Footer.vue'
 </script>
 

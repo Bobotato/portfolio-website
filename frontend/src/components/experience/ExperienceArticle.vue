@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { useDark } from '@vueuse/core'
-import Accordion from '@/components/utils/Accordion.vue'
-import ImageGalleria from '@/components/utils/ImageGalleria.vue'
+import Accordion from '@/components/utils/AccordionTemplate.vue'
+import ImageGalleria from '@/components/utils/websitePreview/ImageGalleria.vue'
 
 import type { WritableComputedRef } from 'vue'
 import type { ExperienceItem } from '@/types/experienceTypes'
@@ -96,13 +96,6 @@ const props = defineProps<Props>()
               </ul>
             </div>
           </div>
-
-          <div class="flex flex-col" v-if="props.experienceDetails.galleria">
-            <div>Quick Preview:</div>
-            <div class="flex items-start justify-center mt-6">
-              <ImageGalleria :images="props.experienceDetails.galleria"></ImageGalleria>
-            </div>
-          </div>
         </section>
 
         <div
@@ -110,7 +103,6 @@ const props = defineProps<Props>()
           class="transition-transform duration-300 flex flex-col items-center justify-center h-5 mt-10 gap-2"
           @click="toggle"
         >
-          
           <img
             src="/assets/fullColourIcons/ArrowDownIcon.svg"
             :class="{ 'rotate-180': expanded }"

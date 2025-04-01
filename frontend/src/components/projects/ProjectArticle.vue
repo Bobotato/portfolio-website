@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import { useDark } from '@vueuse/core'
-import Accordion from '@/components/utils/Accordion.vue'
+import Accordion from '@/components/utils/AccordionTemplate.vue'
 
 import type { WritableComputedRef } from 'vue'
 import type { PortfolioItem } from '@/types/portfolioTypes'
@@ -42,10 +42,7 @@ const props = defineProps<Props>()
                 <h1 id="project-title" class="text-3xl text-left font-bold lg:text-left">
                   {{ props.portfolioData.title }}
                 </h1>
-                <p
-                  id="project-description-text"
-                  class="text-sm text-left font-light lg:text-base"
-                >
+                <p id="project-description-text" class="text-sm text-left font-light lg:text-base">
                   {{ props.portfolioData.desc }}
                 </p>
               </div>
