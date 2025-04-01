@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import TransitionExpand from '@/components/utils/TransitionExpand.vue'
+import TransitionExpand from '@/components/utils/animations/TransitionExpand.vue'
 
 import type { Ref } from 'vue'
 
@@ -11,6 +11,7 @@ function useToggle(): void {
   isExpanded.value = !isExpanded.value
 }
 </script>
+
 <template>
   <div class="accordion">
     <div class="accordion-header w-full">

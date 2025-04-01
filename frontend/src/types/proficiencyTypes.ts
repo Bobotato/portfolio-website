@@ -1,4 +1,5 @@
 interface ProficiencyItem {
+    id: number
     name: string
     imgSrc: string
     imgSrcDark?: string
@@ -6,4 +7,13 @@ interface ProficiencyItem {
     alt?: string
 }
 
-export type { ProficiencyItem }
+interface CertificationItem {
+    id: number
+    name: string
+    shortName: string
+    imgSrc: string
+    link: string
+    alt: string
+}
+
+export type { ProficiencyItem, CertificationItem }

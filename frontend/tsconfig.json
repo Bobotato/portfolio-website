@@ -1,5 +1,5 @@
 {
-  "include": ["**/*.ts", "cypress/support/commands.ts"],
+  "include": ["**/*.ts", "cypress/support/commands.ts", "src/@types"],
   "references": [
     {
       "path": "./tsconfig.node.json"

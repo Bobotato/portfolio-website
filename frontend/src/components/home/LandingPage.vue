@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { RouterLink } from 'vue-router'
 
-import Model from '@/components/utils/Model.vue'
+import ModelPreview from '@/components/utils/ModelPreview.vue'
 </script>
 
 <template>
@@ -109,8 +109,8 @@ import Model from '@/components/utils/Model.vue'
         </ul>
       </section>
 
-      <section id="3Delement" class="flex relative -mt-12 scale-[0.6] lg:mt-0 lg:scale-100">
-        <Model></Model>
+      <section id="model-preview" class="flex relative -mt-12 scale-[0.6] lg:mt-0 lg:scale-100">
+        <ModelPreview></ModelPreview>
       </section>
     </div>
   </main>
